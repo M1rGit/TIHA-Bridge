@@ -1,0 +1,6 @@
+__pycache__
+.venv
+.env
+cache
+bridge.db
+codes.txt
