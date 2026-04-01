@@ -1,36 +1,71 @@
 import asyncio
+import logging
+from logging.handlers import RotatingFileHandler
+from pathlib import Path
+
 from pymax import MaxClient
+
+from core.bus import MessageBus
+from adapters.max.adapter import MaxAdapter
+from adapters.telegram.adapter import TelegramAdapter
+from adapters.discord.adapter import DiscordAdapter
+from db.database import init as db_init
 import config
-import db
-import max_receiver
-import max_sender
-import tg_bot
-
-db.init()
-
-max_client = MaxClient(phone=config.MAX_PHONE, work_dir="cache")
 
 
-@max_client.on_start
-async def register_max_chats() -> None:
-    """Регистрируем все известные чаты Max при старте."""
-    for chat in max_client.chats + max_client.dialogs:
-        title = getattr(chat, "title", None) or str(chat.id)
-        db.upsert_max_chat(chat.id, title)
-    print(f"[Max] Зарегистрировано чатов: {len(max_client.chats + max_client.dialogs)}")
+def setup_logging() -> None:
+    log_dir = Path("logs")
+    log_dir.mkdir(exist_ok=True)
 
+    # Консоль — INFO
+    console = logging.StreamHandler()
+    console.setLevel(logging.INFO)
+    console.setFormatter(logging.Formatter(
+        "%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+        datefmt="%H:%M:%S",
+    ))
 
-max_receiver.register(max_client)
-max_sender.register(max_client)
+    # Файл — DEBUG и выше (всё)
+    file_handler = RotatingFileHandler(
+        log_dir / "bridge.log",
+        maxBytes=10 * 1024 * 1024,  # 10 MB
+        backupCount=5,
+        encoding="utf-8",
+    )
+    file_handler.setLevel(logging.DEBUG)
+    file_handler.setFormatter(logging.Formatter(
+        "%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    ))
 
-bot, dp, forward_loop = tg_bot.create_bot(config.TG_BOT_TOKEN, config.TG_USER_ID)
+    root = logging.getLogger()
+    root.setLevel(logging.DEBUG)
+    root.addHandler(console)
+    root.addHandler(file_handler)
 
 
 async def main() -> None:
+    setup_logging()
+    db_init()
+
+    bus = MessageBus()
+
+    max_client  = MaxClient(phone=config.MAX_PHONE, work_dir="cache")
+    max_adapter = MaxAdapter(client=max_client, bus=bus)
+    tg_adapter  = TelegramAdapter(token=config.TG_BOT_TOKEN, owner_id=config.TG_OWNER_ID, bus=bus)
+    dc_adapter  = DiscordAdapter(token=config.DISCORD_TOKEN, bus=bus)
+
+    bus.register_adapter(max_adapter)
+    bus.register_adapter(tg_adapter)
+    bus.register_adapter(dc_adapter)
+
+    await max_adapter.start()
+
     await asyncio.gather(
         max_client.start(),
-        dp.start_polling(bot),
-        forward_loop(),
+        tg_adapter.start(),
+        dc_adapter.start(),
+        bus.run(),
     )
 
 
