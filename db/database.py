@@ -76,6 +76,12 @@ def init() -> None:
                 name      TEXT NOT NULL,
                 PRIMARY KEY (platform, user_id)
             );
+
+            CREATE TABLE IF NOT EXISTS admins (
+                platform  TEXT NOT NULL,
+                user_id   TEXT NOT NULL,
+                PRIMARY KEY (platform, user_id)
+            );
         """)
 
 
@@ -217,3 +223,34 @@ def get_setting(key: str) -> str | None:
     with _conn() as con:
         row = con.execute("SELECT value FROM settings WHERE key=?", (key,)).fetchone()
         return row["value"] if row else None
+
+# --- Admins ---
+
+def add_admin(platform: str, user_id: str) -> None:
+    with _conn() as con:
+        con.execute(
+            "INSERT OR IGNORE INTO admins (platform, user_id) VALUES (?, ?)",
+            (platform, user_id),
+        )
+
+def remove_admin(platform: str, user_id: str) -> None:
+    with _conn() as con:
+        con.execute(
+            "DELETE FROM admins WHERE platform=? AND user_id=?",
+            (platform, user_id),
+        )
+
+def get_admins(platform: str) -> list[str]:
+    with _conn() as con:
+        rows = con.execute(
+            "SELECT user_id FROM admins WHERE platform=?", (platform,)
+        ).fetchall()
+        return [r["user_id"] for r in rows]
+
+def is_admin(platform: str, user_id: str) -> bool:
+    with _conn() as con:
+        row = con.execute(
+            "SELECT 1 FROM admins WHERE platform=? AND user_id=?",
+            (platform, user_id),
+        ).fetchone()
+        return row is not None

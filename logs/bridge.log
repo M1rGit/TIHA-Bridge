@@ -2687,3 +2687,1400 @@ TimeoutError: timed out during opening handshake
 2026-04-01 12:44:45 [DEBUG] websockets.client: % received keepalive pong
 2026-04-01 12:44:45 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 120, "opcode": 1, ... {"interactive": true}}' [80 bytes]
 2026-04-01 12:44:45 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":120,"opcode":1,"payload":null}' [54 bytes]
+2026-04-02 11:09:58 [WARNING] discord.client: PyNaCl is not installed, voice will NOT be supported
+2026-04-02 11:09:58 [WARNING] discord.client: davey is not installed, voice will NOT be supported
+2026-04-02 11:09:58 [DEBUG] discord.client: on_ready has successfully been registered as an event
+2026-04-02 11:09:58 [DEBUG] discord.client: on_guild_channel_create has successfully been registered as an event
+2026-04-02 11:09:58 [DEBUG] discord.client: on_message has successfully been registered as an event
+2026-04-02 11:09:58 [INFO] core.bus: Adapter registered: max
+2026-04-02 11:09:58 [INFO] core.bus: Adapter registered: telegram
+2026-04-02 11:09:58 [INFO] core.bus: Adapter registered: discord
+2026-04-02 11:09:58 [INFO] pymax.core: Client starting
+2026-04-02 11:09:58 [INFO] pymax.core: Connecting to WebSocket wss://ws-api.oneme.ru/websocket
+2026-04-02 11:09:58 [INFO] adapters.telegram.adapter: Telegram adapter started
+2026-04-02 11:09:58 [INFO] adapters.discord.adapter: Discord adapter starting
+2026-04-02 11:09:58 [INFO] core.bus: MessageBus worker started
+2026-04-02 11:09:58 [INFO] aiogram.dispatcher: Start polling
+2026-04-02 11:09:58 [INFO] discord.client: logging in using static token
+2026-04-02 11:09:58 [DEBUG] websockets.client: = connection is CONNECTING
+2026-04-02 11:09:58 [DEBUG] websockets.client: > GET /websocket HTTP/1.1
+2026-04-02 11:09:58 [DEBUG] websockets.client: > Host: ws-api.oneme.ru
+2026-04-02 11:09:58 [DEBUG] websockets.client: > Origin: https://web.max.ru
+2026-04-02 11:09:58 [DEBUG] websockets.client: > Upgrade: websocket
+2026-04-02 11:09:58 [DEBUG] websockets.client: > Connection: Upgrade
+2026-04-02 11:09:58 [DEBUG] websockets.client: > Sec-WebSocket-Key: EGJQxGswgMMGrGLUEE5lKA==
+2026-04-02 11:09:58 [DEBUG] websockets.client: > Sec-WebSocket-Version: 13
+2026-04-02 11:09:58 [DEBUG] websockets.client: > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-02 11:09:58 [DEBUG] websockets.client: > User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0
+2026-04-02 11:09:58 [DEBUG] websockets.client: < HTTP/1.1 101 Switching Protocols
+2026-04-02 11:09:58 [DEBUG] websockets.client: < upgrade: websocket
+2026-04-02 11:09:58 [DEBUG] websockets.client: < connection: upgrade
+2026-04-02 11:09:58 [DEBUG] websockets.client: < sec-websocket-accept: 3jG6D6rp79CBXkhcC4HSnk6nh4I=
+2026-04-02 11:09:58 [DEBUG] websockets.client: < sec-websocket-extensions: permessage-deflate
+2026-04-02 11:09:58 [DEBUG] websockets.client: = connection is OPEN
+2026-04-02 11:09:58 [INFO] pymax.core: WebSocket connected, starting handshake
+2026-04-02 11:09:58 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 1, "opcode": 6, "p..."buildNumber": 38859}}}' [515 bytes]
+2026-04-02 11:09:58 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":1,"opcode":6,"payload":..."GE"],"location":"RU"}}' [153 bytes]
+2026-04-02 11:09:58 [INFO] pymax.core: Handshake completed
+2026-04-02 11:09:58 [INFO] pymax.core: Starting login flow
+2026-04-02 11:09:58 [INFO] pymax.core: Requesting QR login data
+2026-04-02 11:09:58 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 2, "opcode": 288, "payload": {}}' [61 bytes]
+2026-04-02 11:09:58 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":2,"opcode":288,"payload...iresAt":1775117518825}}' [231 bytes]
+2026-04-02 11:09:58 [INFO] pymax.core: Starting QR login flow
+2026-04-02 11:09:58 [INFO] pymax.core: Polling for QR login confirmation
+2026-04-02 11:09:58 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 3, "opcode": 289, ...56-bba7-9e31e14e692f"}}' [110 bytes]
+2026-04-02 11:09:58 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":3,"opcode":289,"payload...resAt":1775117518825}}}' [88 bytes]
+2026-04-02 11:09:58 [INFO] aiogram.dispatcher: Run polling for bot @max_tg_bridge_s_bot id=8289166189 - 'TIHA Bridge'
+2026-04-02 11:09:58 [INFO] aiogram.event: Update id=897338312 is handled. Duration 1 ms by bot id=8289166189
+2026-04-02 11:09:58 [INFO] aiogram.event: Update id=897338310 is handled. Duration 2 ms by bot id=8289166189
+2026-04-02 11:09:58 [INFO] aiogram.event: Update id=897338311 is handled. Duration 2 ms by bot id=8289166189
+2026-04-02 11:09:58 [INFO] pymax.core: Sending message to chat_id=-72723141257889 notify=True
+2026-04-02 11:09:58 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 4, "opcode": 64, "...null}, "notify": true}}' [286 bytes]
+2026-04-02 11:09:58 [INFO] pymax.core: Sending message to chat_id=-72723141257889 notify=True
+2026-04-02 11:09:58 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 5, "opcode": 64, "...null}, "notify": true}}' [286 bytes]
+2026-04-02 11:09:58 [INFO] pymax.core: Sending message to chat_id=-72723141257889 notify=True
+2026-04-02 11:09:58 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 6, "opcode": 64, "...null}, "notify": true}}' [286 bytes]
+2026-04-02 11:09:58 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":3,"seq":4,"opcode":64,"payload"...мое состояние сессии"}}' [252 bytes]
+2026-04-02 11:09:58 [DEBUG] websockets.client: < EOF
+2026-04-02 11:09:58 [DEBUG] websockets.client: < EOF
+2026-04-02 11:09:58 [DEBUG] websockets.client: > EOF
+2026-04-02 11:09:58 [DEBUG] websockets.client: = connection is CLOSED
+2026-04-02 11:09:58 [DEBUG] websockets.client: x closing TCP connection
+2026-04-02 11:09:58 [ERROR] adapters.max.adapter: Max send failed
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/adapters/max/adapter.py", line 215, in send
+    result = await self._client.send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        text=msg.text, chat_id=chat_id, notify=True,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/message.py", line 422, in send_message
+    MixinsUtils.handle_error(data)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/utils.py", line 27, in handle_error
+    raise Error(
+    ...<4 lines>...
+    )
+pymax.exceptions.Error: PyMax Error: Недопустимое состояние сессии Must be ONLINE session (Недопустимое состояние сессии) [proto.state]
+2026-04-02 11:09:58 [INFO] pymax.core: WebSocket connection closed with error: 1006, ; exiting recv loop
+2026-04-02 11:09:58 [ERROR] pymax.core: Send and wait failed (opcode=Opcode.MSG_SEND, seq=5)
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/websocket.py", line 130, in _send_and_wait
+    data = await asyncio.wait_for(fut, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+pymax.exceptions.WebSocketNotConnectedError: WebSocket is not connected
+2026-04-02 11:09:58 [ERROR] adapters.max.adapter: Max send failed
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/websocket.py", line 130, in _send_and_wait
+    data = await asyncio.wait_for(fut, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+pymax.exceptions.WebSocketNotConnectedError: WebSocket is not connected
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/adapters/max/adapter.py", line 215, in send
+    result = await self._client.send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        text=msg.text, chat_id=chat_id, notify=True,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/message.py", line 419, in send_message
+    data = await self._send_and_wait(opcode=Opcode.MSG_SEND, payload=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/websocket.py", line 142, in _send_and_wait
+    raise RuntimeError("Send and wait failed")
+RuntimeError: Send and wait failed
+2026-04-02 11:09:58 [ERROR] pymax.core: Send and wait failed (opcode=Opcode.MSG_SEND, seq=6)
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/websocket.py", line 130, in _send_and_wait
+    data = await asyncio.wait_for(fut, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+pymax.exceptions.WebSocketNotConnectedError: WebSocket is not connected
+2026-04-02 11:09:58 [ERROR] adapters.max.adapter: Max send failed
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/websocket.py", line 130, in _send_and_wait
+    data = await asyncio.wait_for(fut, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+pymax.exceptions.WebSocketNotConnectedError: WebSocket is not connected
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/adapters/max/adapter.py", line 215, in send
+    result = await self._client.send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        text=msg.text, chat_id=chat_id, notify=True,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/message.py", line 419, in send_message
+    data = await self._send_and_wait(opcode=Opcode.MSG_SEND, payload=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/websocket.py", line 142, in _send_and_wait
+    raise RuntimeError("Send and wait failed")
+RuntimeError: Send and wait failed
+2026-04-02 11:09:58 [DEBUG] discord.http: GET https://discord.com/api/v10/users/@me with None has returned 200
+2026-04-02 11:09:58 [DEBUG] discord.http: GET /users/@me has found its initial rate limit bucket hash (78bb8553d9352a5a2f89f9def401287a).
+2026-04-02 11:09:58 [DEBUG] discord.http: GET https://discord.com/api/v10/users/@me has received {'id': '1488466672359575694', 'username': 'BRIDGE', 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c', 'discriminator': '8720', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None, 'mfa_enabled': True, 'locale': 'en-US', 'premium_type': 0, 'email': None, 'verified': True, 'bio': ''}
+2026-04-02 11:09:59 [DEBUG] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me with None has returned 200
+2026-04-02 11:09:59 [DEBUG] discord.http: GET /oauth2/applications/@me has found its initial rate limit bucket hash (d28a133af187e91d71d96a223467ce49).
+2026-04-02 11:09:59 [DEBUG] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me has received {'id': '1488466672359575694', 'name': 'BRIDGE', 'icon': 'a4537a16a2592def5eb7697a07e0ee9c', 'description': 'Max-Telegram-Discord bridge bot', 'type': None, 'bot': {'id': '1488466672359575694', 'username': 'BRIDGE', 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c', 'discriminator': '8720', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None}, 'summary': '', 'is_monetized': False, 'is_verified': False, 'is_discoverable': False, 'bot_public': True, 'bot_require_code_grant': False, 'install_params': {'scopes': ['applications.commands'], 'permissions': '0'}, 'integration_types_config': {'0': {'oauth2_install_params': {'scopes': ['applications.commands'], 'permissions': '0'}}, '1': {'oauth2_install_params': {'scopes': ['applications.commands'], 'permissions': '0'}}}, 'verify_key': '158f8e4aa5be97a1cc30d6168df83779d3ee7febaa334a4561149f21703df18f', 'flags': 11042816, 'hook': True, 'storefront_available': False, 'redirect_uris': [], 'interactions_endpoint_url': None, 'role_connections_verification_url': None, 'owner': {'id': '941848879672987658', 'username': 'm1notaur_studio', 'avatar': '053c9507b6bc715a7c95cf8f95b63eab', 'discriminator': '0', 'public_flags': 128, 'flags': 128, 'banner': None, 'accent_color': 0, 'global_name': 'M1notaur_', 'avatar_decoration_data': {'asset': 'a_4539f720c2c576feca9de41b8dc413e8', 'sku_id': '1341506443882266624', 'expires_at': None}, 'collectibles': {'nameplate': {'sku_id': '1465519580016410746', 'asset': 'nameplates/blossoming_branch/1465519580016410746/', 'label': 'Swaying cherry blossom branch with petals blowing and gentle watercolor washes.', 'palette': 'bubble_gum'}}, 'display_name_styles': None, 'banner_color': '#000000', 'clan': None, 'primary_guild': None}, 'approximate_guild_count': 1, 'approximate_user_install_count': 0, 'approximate_user_authorization_count': 0, 'interactions_event_types': [], 'interactions_version': 1, 'explicit_content_filter': 0, 'rpc_application_state': 0, 'store_application_state': 1, 'verification_state': 1, 'integration_public': True, 'integration_require_code_grant': False, 'discoverability_state': 1, 'discovery_eligibility_flags': 2532, 'monetization_state': 1, 'verification_eligibility_flags': 123804, 'monetization_eligibility_flags': 247524, 'bot_approximate_guild_count': 1, 'team': None, 'internal_guild_restriction': 2, 'approved_consoles': [], 'pricing_localization_strategy': 'localized_price_sets'}
+2026-04-02 11:09:59 [DEBUG] discord.gateway: Created websocket connected to wss://gateway.discord.gg/
+2026-04-02 11:09:59 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-arm-us-east1-d-412b",{"micros":0.0}]']}}
+2026-04-02 11:09:59 [DEBUG] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2026-04-02 11:09:59 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2026-04-02 11:10:00 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 10, 'user_settings': {}, 'user': {'verified': True, 'username': 'BRIDGE', 'primary_guild': None, 'mfa_enabled': True, 'id': '1488466672359575694', 'global_name': None, 'flags': 0, 'email': None, 'discriminator': '8720', 'clan': None, 'bot': True, 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c'}, 'session_type': 'normal', 'session_id': '8cf56f42825ba047e919e167bdc30f63', 'resume_gateway_url': 'wss://gateway-us-east1-d.discord.gg', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '1488467858446094416'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['finland', 'helsinki', 'warsaw', 'stockholm', 'bucharest'], 'game_relationships': [], 'auth': {}, 'application': {'id': '1488466672359575694', 'flags_new': '11042816', 'flags': 11042816}, '_trace': ['["gateway-prd-arm-us-east1-d-412b",{"micros":176185,"calls":["id_created",{"micros":1863,"calls":[]},"session_lookup_time",{"micros":10328,"calls":[]},"session_lookup_finished",{"micros":11,"calls":[]},"sessions-prd-gcp-us-east1-d-20",{"micros":163481,"calls":["start_session",{"micros":158793,"calls":["prd-rpc-74569b8dd4-2nmlp",{"micros":96441,"calls":["get_user",{"micros":26311},"get_guilds",{"micros":23714},"send_scheduled_deletion_message",{"micros":10},"guild_join_requests",{"micros":12228},"authorized_ip_coro",{"micros":9},"pending_payments",{"micros":5527},"apex_experiments",{"micros":47588},"sessions_experiments",{"micros":7},"played_application_ids",{"micros":4},"linked_users",{"micros":3},"ad_personalization_toggles_disabled",{"micros":3},"regional_feature_config",{"micros":3}]}]},"starting_guild_connect",{"micros":33,"calls":[]},"presence_started",{"micros":271,"calls":[]},"guilds_started",{"micros":66,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":4267,"calls":[]},"connect_finished",{"micros":4284,"calls":[]},"build_ready",{"micros":17,"calls":[]},"clean_ready",{"micros":3,"calls":[]},"optimize_ready",{"micros":12,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}]']}}
+2026-04-02 11:10:00 [DEBUG] discord.client: Dispatching event socket_event_type
+2026-04-02 11:10:00 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 8cf56f42825ba047e919e167bdc30f63).
+2026-04-02 11:10:00 [DEBUG] discord.client: Dispatching event connect
+2026-04-02 11:10:00 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'rules_channel_id': None, 'members': [{'user': {'username': 'BRIDGE', 'public_flags': 0, 'primary_guild': None, 'id': '1488466672359575694', 'global_name': None, 'display_name_styles': None, 'display_name': None, 'discriminator': '8720', 'collectibles': None, 'bot': True, 'avatar_decoration_data': None, 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c'}, 'roles': ['1488475283815403665'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2026-03-31T09:49:22.258000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}], 'application_id': None, 'moderator_reporting': None, 'lazy': True, 'profile': None, 'stage_instances': [], 'application_command_counts': {}, 'premium_subscription_count': 0, 'premium_features': None, 'id': '1488467858446094416', 'roles': [{'version': 1774948791946, 'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions': '2248473465835073', 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '1488467858446094416', 'icon': None, 'hoist': False, 'flags': 0, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}, {'version': 1774950562243, 'unicode_emoji': None, 'tags': {'bot_id': '1488466672359575694'}, 'position': 1, 'permissions': '2147585024', 'name': 'BRIDGE', 'mentionable': False, 'managed': True, 'id': '1488475283815403665', 'icon': None, 'hoist': False, 'flags': 0, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}], 'max_stage_video_channel_users': 50, 'member_count': 3, 'region': 'deprecated', 'name': 'TIHA-Bridge', 'preferred_locale': 'en-US', 'presences': [], 'stickers': [], 'threads': [], 'emojis': [], 'public_updates_channel_id': None, 'description': None, 'joined_at': '2026-03-31T09:49:22.258000+00:00', 'vanity_url_code': None, 'system_channel_flags': 0, 'nsfw': False, 'game_application_ids': None, 'voice_states': [], 'verification_level': 0, 'explicit_content_filter': 0, 'banner': None, 'splash': None, 'large': False, 'premium_tier': 0, 'max_members': 25000000, 'incidents_data': None, 'inventory_settings': None, 'afk_timeout': 300, 'premium_progress_bar_enabled_user_updated_at': None, 'icon': None, 'embedded_activities': [], 'nsfw_level': 0, 'mfa_level': 0, 'unavailable': False, 'activity_instances': [], 'owner_configured_content_level': 0, 'discovery_splash': None, 'features': [], 'default_message_notifications': 0, 'owner_id': '941848879672987658', 'version': 1774948838405, 'soundboard_sounds': [], 'premium_progress_bar_enabled': False, 'guild_scheduled_events': [], 'channels': [{'version': 1774948791949, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Текстовые каналы', 'id': '1488467858446094417', 'flags': 0}, {'version': 1774948791961, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Голосовые каналы', 'id': '1488467858903138394', 'flags': 0}, {'version': 1774948791972, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1488467858446094417', 'name': 'основной', 'last_message_id': '1488807942944985160', 'id': '1488467858903138395', 'icon_emoji': {'name': '👋', 'id': None}, 'flags': 0}, {'version': 1774948791986, 'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1488467858903138394', 'name': 'Основной', 'last_message_id': None, 'id': '1488467858903138397', 'icon_emoji': {'name': '🎙', 'id': None}, 'flags': 0, 'bitrate': 64000}], 'afk_channel_id': None, 'hub_type': None, 'home_header': None, 'latest_onboarding_question_id': None, 'system_channel_id': '1488467858903138395', 'max_video_channel_users': 25, 'safety_alerts_channel_id': None}}
+2026-04-02 11:10:00 [DEBUG] discord.client: Dispatching event socket_event_type
+2026-04-02 11:10:00 [DEBUG] discord.client: Dispatching event guild_available
+2026-04-02 11:10:02 [DEBUG] discord.client: Dispatching event ready
+2026-04-02 11:10:02 [DEBUG] discord.http: PUT https://discord.com/api/v10/applications/1488466672359575694/commands with [{"name":"routes","description":"\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u043c\u0430\u0440\u0448\u0440\u0443\u0442\u044b","type":1,"options":[],"nsfw":false,"dm_permission":true,"default_member_permissions":null,"contexts":null,"integration_types":null}] has returned 200
+2026-04-02 11:10:02 [DEBUG] discord.http: PUT /applications/{application_id}/commands has found its initial rate limit bucket hash (3e32a240d3716487d7d8f6dae6c54f6b).
+2026-04-02 11:10:02 [DEBUG] discord.http: PUT https://discord.com/api/v10/applications/1488466672359575694/commands has received [{'id': '1488470695997608007', 'application_id': '1488466672359575694', 'version': '1488470695997608008', 'default_member_permissions': None, 'type': 1, 'name': 'routes', 'name_localizations': None, 'description': 'Показать маршруты', 'description_localizations': None, 'dm_permission': True, 'contexts': None, 'integration_types': [0, 1], 'nsfw': False}]
+2026-04-02 11:10:02 [INFO] adapters.discord.adapter: Discord adapter ready: BRIDGE#8720
+2026-04-02 11:10:03 [CRITICAL] pymax.core: WebSocket not connected when access attempted
+2026-04-02 11:10:03 [ERROR] pymax.core: Client start iteration failed
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/core.py", line 306, in start
+    await self._login()
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/auth.py", line 194, in _login
+    login_resp = await self._login_by_qr()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/auth.py", line 313, in _login_by_qr
+    raise exc
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/auth.py", line 229, in _poll_qr_login
+    data = await self._send_and_wait(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/websocket.py", line 110, in _send_and_wait
+    ws = self.ws
+         ^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/websocket.py", line 27, in ws
+    raise WebSocketNotConnectedError
+pymax.exceptions.WebSocketNotConnectedError: WebSocket is not connected
+2026-04-02 11:10:03 [INFO] pymax.core: Client start() cleaned up
+2026-04-02 11:10:03 [INFO] pymax.core: Reconnect enabled — restarting client
+2026-04-02 11:10:04 [INFO] pymax.core: Connecting to WebSocket wss://ws-api.oneme.ru/websocket
+2026-04-02 11:10:04 [DEBUG] websockets.client: = connection is CONNECTING
+2026-04-02 11:10:04 [DEBUG] websockets.client: > GET /websocket HTTP/1.1
+2026-04-02 11:10:04 [DEBUG] websockets.client: > Host: ws-api.oneme.ru
+2026-04-02 11:10:04 [DEBUG] websockets.client: > Origin: https://web.max.ru
+2026-04-02 11:10:04 [DEBUG] websockets.client: > Upgrade: websocket
+2026-04-02 11:10:04 [DEBUG] websockets.client: > Connection: Upgrade
+2026-04-02 11:10:04 [DEBUG] websockets.client: > Sec-WebSocket-Key: 4v42GNTUCqMoak7kGTU+QA==
+2026-04-02 11:10:04 [DEBUG] websockets.client: > Sec-WebSocket-Version: 13
+2026-04-02 11:10:04 [DEBUG] websockets.client: > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-02 11:10:04 [DEBUG] websockets.client: > User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0
+2026-04-02 11:10:05 [DEBUG] websockets.client: < HTTP/1.1 101 Switching Protocols
+2026-04-02 11:10:05 [DEBUG] websockets.client: < upgrade: websocket
+2026-04-02 11:10:05 [DEBUG] websockets.client: < connection: upgrade
+2026-04-02 11:10:05 [DEBUG] websockets.client: < sec-websocket-accept: e2BKeCmcwEsq2bYh03G/mf6AAmE=
+2026-04-02 11:10:05 [DEBUG] websockets.client: < sec-websocket-extensions: permessage-deflate
+2026-04-02 11:10:05 [DEBUG] websockets.client: = connection is OPEN
+2026-04-02 11:10:05 [INFO] pymax.core: WebSocket connected, starting handshake
+2026-04-02 11:10:05 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 7, "opcode": 6, "p..."buildNumber": 38859}}}' [515 bytes]
+2026-04-02 11:10:05 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":7,"opcode":6,"payload":..."GE"],"location":"RU"}}' [153 bytes]
+2026-04-02 11:10:05 [INFO] pymax.core: Handshake completed
+2026-04-02 11:10:05 [INFO] pymax.core: Starting login flow
+2026-04-02 11:10:05 [INFO] pymax.core: Requesting QR login data
+2026-04-02 11:10:05 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 8, "opcode": 288, "payload": {}}' [61 bytes]
+2026-04-02 11:10:05 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":8,"opcode":288,"payload...iresAt":1775117518825}}' [231 bytes]
+2026-04-02 11:10:05 [INFO] pymax.core: Starting QR login flow
+2026-04-02 11:10:05 [INFO] pymax.core: Polling for QR login confirmation
+2026-04-02 11:10:05 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 9, "opcode": 289, ...56-bba7-9e31e14e692f"}}' [110 bytes]
+2026-04-02 11:10:05 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":9,"opcode":289,"payload...resAt":1775117518825}}}' [88 bytes]
+2026-04-02 11:10:09 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:09 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:10 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 10, "opcode": 289,...56-bba7-9e31e14e692f"}}' [111 bytes]
+2026-04-02 11:10:10 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:10 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":10,"opcode":289,"payloa...resAt":1775117518825}}}' [89 bytes]
+2026-04-02 11:10:10 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:11 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:11 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:12 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:12 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:13 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:13 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:14 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:14 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:15 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:15 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 11, "opcode": 289,...56-bba7-9e31e14e692f"}}' [111 bytes]
+2026-04-02 11:10:15 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":11,"opcode":289,"payloa...resAt":1775117518825}}}' [89 bytes]
+2026-04-02 11:10:15 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:16 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:16 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:17 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:17 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:18 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:18 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:19 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:19 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:20 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 12, "opcode": 289,...56-bba7-9e31e14e692f"}}' [111 bytes]
+2026-04-02 11:10:20 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:20 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":12,"opcode":289,"payloa...resAt":1775117518825}}}' [89 bytes]
+2026-04-02 11:10:20 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:21 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:21 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:22 [ERROR] core.bus: Bus worker error
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/core/bus.py", line 40, in run
+    ready = self._queue.pop_ready()
+  File "/Users/minotaur/Project/TIHA-Bridge/db/queue.py", line 35, in pop_ready
+        rows = con.execute(
+               ~~~~~~~~~~~^
+        """SELECT * FROM message_queue
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        (now,),
+        ^^^^^^^
+    ).fetchall()
+    ^
+sqlite3.OperationalError: no such table: message_queue
+2026-04-02 11:10:24 [WARNING] discord.client: PyNaCl is not installed, voice will NOT be supported
+2026-04-02 11:10:24 [WARNING] discord.client: davey is not installed, voice will NOT be supported
+2026-04-02 11:10:24 [DEBUG] discord.client: on_ready has successfully been registered as an event
+2026-04-02 11:10:24 [DEBUG] discord.client: on_guild_channel_create has successfully been registered as an event
+2026-04-02 11:10:24 [DEBUG] discord.client: on_message has successfully been registered as an event
+2026-04-02 11:10:24 [INFO] core.bus: Adapter registered: max
+2026-04-02 11:10:24 [INFO] core.bus: Adapter registered: telegram
+2026-04-02 11:10:24 [INFO] core.bus: Adapter registered: discord
+2026-04-02 11:10:24 [INFO] pymax.core: Client starting
+2026-04-02 11:10:24 [INFO] pymax.core: Connecting to WebSocket wss://ws-api.oneme.ru/websocket
+2026-04-02 11:10:24 [INFO] adapters.telegram.adapter: Telegram adapter started
+2026-04-02 11:10:24 [INFO] adapters.discord.adapter: Discord adapter starting
+2026-04-02 11:10:24 [INFO] core.bus: MessageBus worker started
+2026-04-02 11:10:24 [INFO] aiogram.dispatcher: Start polling
+2026-04-02 11:10:24 [INFO] discord.client: logging in using static token
+2026-04-02 11:10:24 [DEBUG] websockets.client: = connection is CONNECTING
+2026-04-02 11:10:24 [DEBUG] websockets.client: > GET /websocket HTTP/1.1
+2026-04-02 11:10:24 [DEBUG] websockets.client: > Host: ws-api.oneme.ru
+2026-04-02 11:10:24 [DEBUG] websockets.client: > Origin: https://web.max.ru
+2026-04-02 11:10:24 [DEBUG] websockets.client: > Upgrade: websocket
+2026-04-02 11:10:24 [DEBUG] websockets.client: > Connection: Upgrade
+2026-04-02 11:10:24 [DEBUG] websockets.client: > Sec-WebSocket-Key: I25RWIbFSih4PpayO+9Fuw==
+2026-04-02 11:10:24 [DEBUG] websockets.client: > Sec-WebSocket-Version: 13
+2026-04-02 11:10:24 [DEBUG] websockets.client: > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-02 11:10:24 [DEBUG] websockets.client: > User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_13 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/131.0.2903.86 Version/16.0 Mobile/15E148 Safari/604.1
+2026-04-02 11:10:24 [DEBUG] websockets.client: < HTTP/1.1 101 Switching Protocols
+2026-04-02 11:10:24 [DEBUG] websockets.client: < upgrade: websocket
+2026-04-02 11:10:24 [DEBUG] websockets.client: < connection: upgrade
+2026-04-02 11:10:24 [DEBUG] websockets.client: < sec-websocket-accept: BkfAHqZPnn0jsJtyXhSJqK3T7m0=
+2026-04-02 11:10:24 [DEBUG] websockets.client: < sec-websocket-extensions: permessage-deflate
+2026-04-02 11:10:24 [DEBUG] websockets.client: = connection is OPEN
+2026-04-02 11:10:24 [INFO] pymax.core: WebSocket connected, starting handshake
+2026-04-02 11:10:24 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 1, "opcode": 6, "p..."buildNumber": 38859}}}' [548 bytes]
+2026-04-02 11:10:24 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":1,"opcode":6,"payload":..."GE"],"location":"RU"}}' [153 bytes]
+2026-04-02 11:10:24 [INFO] pymax.core: Handshake completed
+2026-04-02 11:10:24 [INFO] pymax.core: Starting login flow
+2026-04-02 11:10:24 [INFO] pymax.core: Requesting QR login data
+2026-04-02 11:10:24 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 2, "opcode": 288, "payload": {}}' [61 bytes]
+2026-04-02 11:10:24 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":2,"opcode":288,"payload...iresAt":1775117518825}}' [230 bytes]
+2026-04-02 11:10:24 [INFO] pymax.core: Starting QR login flow
+2026-04-02 11:10:24 [INFO] pymax.core: Polling for QR login confirmation
+2026-04-02 11:10:24 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 3, "opcode": 289, ...56-bba7-9e31e14e692f"}}' [110 bytes]
+2026-04-02 11:10:24 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":3,"opcode":289,"payload...resAt":1775117518825}}}' [88 bytes]
+2026-04-02 11:10:25 [DEBUG] discord.http: GET https://discord.com/api/v10/users/@me with None has returned 200
+2026-04-02 11:10:25 [DEBUG] discord.http: GET /users/@me has found its initial rate limit bucket hash (78bb8553d9352a5a2f89f9def401287a).
+2026-04-02 11:10:25 [DEBUG] discord.http: GET https://discord.com/api/v10/users/@me has received {'id': '1488466672359575694', 'username': 'BRIDGE', 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c', 'discriminator': '8720', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None, 'mfa_enabled': True, 'locale': 'en-US', 'premium_type': 0, 'email': None, 'verified': True, 'bio': ''}
+2026-04-02 11:10:25 [INFO] aiogram.dispatcher: Run polling for bot @max_tg_bridge_s_bot id=8289166189 - 'TIHA Bridge'
+2026-04-02 11:10:25 [DEBUG] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me with None has returned 200
+2026-04-02 11:10:25 [DEBUG] discord.http: GET /oauth2/applications/@me has found its initial rate limit bucket hash (d28a133af187e91d71d96a223467ce49).
+2026-04-02 11:10:25 [DEBUG] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me has received {'id': '1488466672359575694', 'name': 'BRIDGE', 'icon': 'a4537a16a2592def5eb7697a07e0ee9c', 'description': 'Max-Telegram-Discord bridge bot', 'type': None, 'bot': {'id': '1488466672359575694', 'username': 'BRIDGE', 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c', 'discriminator': '8720', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None}, 'summary': '', 'is_monetized': False, 'is_verified': False, 'is_discoverable': False, 'bot_public': True, 'bot_require_code_grant': False, 'install_params': {'scopes': ['applications.commands'], 'permissions': '0'}, 'integration_types_config': {'0': {'oauth2_install_params': {'scopes': ['applications.commands'], 'permissions': '0'}}, '1': {'oauth2_install_params': {'scopes': ['applications.commands'], 'permissions': '0'}}}, 'verify_key': '158f8e4aa5be97a1cc30d6168df83779d3ee7febaa334a4561149f21703df18f', 'flags': 11042816, 'hook': True, 'storefront_available': False, 'redirect_uris': [], 'interactions_endpoint_url': None, 'role_connections_verification_url': None, 'owner': {'id': '941848879672987658', 'username': 'm1notaur_studio', 'avatar': '053c9507b6bc715a7c95cf8f95b63eab', 'discriminator': '0', 'public_flags': 128, 'flags': 128, 'banner': None, 'accent_color': 0, 'global_name': 'M1notaur_', 'avatar_decoration_data': {'asset': 'a_4539f720c2c576feca9de41b8dc413e8', 'sku_id': '1341506443882266624', 'expires_at': None}, 'collectibles': {'nameplate': {'sku_id': '1465519580016410746', 'asset': 'nameplates/blossoming_branch/1465519580016410746/', 'label': 'Swaying cherry blossom branch with petals blowing and gentle watercolor washes.', 'palette': 'bubble_gum'}}, 'display_name_styles': None, 'banner_color': '#000000', 'clan': None, 'primary_guild': None}, 'approximate_guild_count': 1, 'approximate_user_install_count': 0, 'approximate_user_authorization_count': 0, 'interactions_event_types': [], 'interactions_version': 1, 'explicit_content_filter': 0, 'rpc_application_state': 0, 'store_application_state': 1, 'verification_state': 1, 'integration_public': True, 'integration_require_code_grant': False, 'discoverability_state': 1, 'discovery_eligibility_flags': 2532, 'monetization_state': 1, 'verification_eligibility_flags': 123804, 'monetization_eligibility_flags': 247524, 'bot_approximate_guild_count': 1, 'team': None, 'internal_guild_restriction': 2, 'approved_consoles': [], 'pricing_localization_strategy': 'localized_price_sets'}
+2026-04-02 11:10:25 [DEBUG] discord.gateway: Created websocket connected to wss://gateway.discord.gg/
+2026-04-02 11:10:25 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-arm-us-east1-d-f9qd",{"micros":0.0}]']}}
+2026-04-02 11:10:25 [DEBUG] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2026-04-02 11:10:25 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2026-04-02 11:10:26 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 10, 'user_settings': {}, 'user': {'verified': True, 'username': 'BRIDGE', 'primary_guild': None, 'mfa_enabled': True, 'id': '1488466672359575694', 'global_name': None, 'flags': 0, 'email': None, 'discriminator': '8720', 'clan': None, 'bot': True, 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c'}, 'session_type': 'normal', 'session_id': '423b6573801fd9b8e9e984e9714f95af', 'resume_gateway_url': 'wss://gateway-us-east1-d.discord.gg', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '1488467858446094416'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['finland', 'helsinki', 'warsaw', 'stockholm', 'bucharest'], 'game_relationships': [], 'auth': {}, 'application': {'id': '1488466672359575694', 'flags_new': '11042816', 'flags': 11042816}, '_trace': ['["gateway-prd-arm-us-east1-d-f9qd",{"micros":370445,"calls":["id_created",{"micros":819,"calls":[]},"session_lookup_time",{"micros":284,"calls":[]},"session_lookup_finished",{"micros":10,"calls":[]},"sessions-prd-gcp-us-east1-d-44",{"micros":368868,"calls":["start_session",{"micros":275667,"calls":["prd-rpc-74569b8dd4-4gqx9",{"micros":143182,"calls":["get_user",{"micros":74028},"get_guilds",{"micros":2986},"send_scheduled_deletion_message",{"micros":12},"guild_join_requests",{"micros":640},"authorized_ip_coro",{"micros":1834},"pending_payments",{"micros":1507},"apex_experiments",{"micros":110381},"sessions_experiments",{"micros":7},"played_application_ids",{"micros":4},"linked_users",{"micros":4},"ad_personalization_toggles_disabled",{"micros":4},"regional_feature_config",{"micros":4}]}]},"starting_guild_connect",{"micros":44,"calls":[]},"presence_started",{"micros":38770,"calls":[]},"guilds_started",{"micros":70,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":2,"calls":[]},"presence_connect",{"micros":54254,"calls":[]},"connect_finished",{"micros":54274,"calls":[]},"build_ready",{"micros":16,"calls":[]},"clean_ready",{"micros":23,"calls":[]},"optimize_ready",{"micros":1,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}]']}}
+2026-04-02 11:10:26 [DEBUG] discord.client: Dispatching event socket_event_type
+2026-04-02 11:10:26 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 423b6573801fd9b8e9e984e9714f95af).
+2026-04-02 11:10:26 [DEBUG] discord.client: Dispatching event connect
+2026-04-02 11:10:26 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'members': [{'user': {'username': 'BRIDGE', 'public_flags': 0, 'primary_guild': None, 'id': '1488466672359575694', 'global_name': None, 'display_name_styles': None, 'display_name': None, 'discriminator': '8720', 'collectibles': None, 'bot': True, 'avatar_decoration_data': None, 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c'}, 'roles': ['1488475283815403665'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2026-03-31T09:49:22.258000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}], 'verification_level': 0, 'explicit_content_filter': 0, 'nsfw_level': 0, 'premium_subscription_count': 0, 'incidents_data': None, 'roles': [{'version': 1774948791946, 'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions': '2248473465835073', 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '1488467858446094416', 'icon': None, 'hoist': False, 'flags': 0, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}, {'version': 1774950562243, 'unicode_emoji': None, 'tags': {'bot_id': '1488466672359575694'}, 'position': 1, 'permissions': '2147585024', 'name': 'BRIDGE', 'mentionable': False, 'managed': True, 'id': '1488475283815403665', 'icon': None, 'hoist': False, 'flags': 0, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}], 'premium_features': None, 'lazy': True, 'profile': None, 'owner_configured_content_level': 0, 'home_header': None, 'application_command_counts': {}, 'stage_instances': [], 'id': '1488467858446094416', 'mfa_level': 0, 'moderator_reporting': None, 'name': 'TIHA-Bridge', 'preferred_locale': 'en-US', 'default_message_notifications': 0, 'latest_onboarding_question_id': None, 'large': False, 'nsfw': False, 'afk_timeout': 300, 'unavailable': False, 'max_members': 25000000, 'threads': [], 'system_channel_flags': 0, 'max_stage_video_channel_users': 50, 'description': None, 'soundboard_sounds': [], 'discovery_splash': None, 'guild_scheduled_events': [], 'max_video_channel_users': 25, 'icon': None, 'game_application_ids': None, 'premium_progress_bar_enabled': False, 'joined_at': '2026-03-31T09:49:22.258000+00:00', 'vanity_url_code': None, 'voice_states': [], 'channels': [{'version': 1774948791949, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Текстовые каналы', 'id': '1488467858446094417', 'flags': 0}, {'version': 1774948791961, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Голосовые каналы', 'id': '1488467858903138394', 'flags': 0}, {'version': 1774948791972, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1488467858446094417', 'name': 'основной', 'last_message_id': '1488807942944985160', 'id': '1488467858903138395', 'icon_emoji': {'name': '👋', 'id': None}, 'flags': 0}, {'version': 1774948791986, 'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1488467858903138394', 'name': 'Основной', 'last_message_id': None, 'id': '1488467858903138397', 'icon_emoji': {'name': '🎙', 'id': None}, 'flags': 0, 'bitrate': 64000}], 'public_updates_channel_id': None, 'system_channel_id': '1488467858903138395', 'owner_id': '941848879672987658', 'features': [], 'premium_progress_bar_enabled_user_updated_at': None, 'inventory_settings': None, 'activity_instances': [], 'splash': None, 'region': 'deprecated', 'emojis': [], 'application_id': None, 'hub_type': None, 'premium_tier': 0, 'rules_channel_id': None, 'version': 1774948838405, 'embedded_activities': [], 'stickers': [], 'banner': None, 'presences': [], 'safety_alerts_channel_id': None, 'afk_channel_id': None, 'member_count': 3}}
+2026-04-02 11:10:26 [DEBUG] discord.client: Dispatching event socket_event_type
+2026-04-02 11:10:26 [DEBUG] discord.client: Dispatching event guild_available
+2026-04-02 11:10:28 [DEBUG] discord.client: Dispatching event ready
+2026-04-02 11:10:28 [DEBUG] discord.http: PUT https://discord.com/api/v10/applications/1488466672359575694/commands with [{"name":"routes","description":"\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u043c\u0430\u0440\u0448\u0440\u0443\u0442\u044b","type":1,"options":[],"nsfw":false,"dm_permission":true,"default_member_permissions":null,"contexts":null,"integration_types":null}] has returned 200
+2026-04-02 11:10:28 [DEBUG] discord.http: PUT /applications/{application_id}/commands has found its initial rate limit bucket hash (3e32a240d3716487d7d8f6dae6c54f6b).
+2026-04-02 11:10:28 [DEBUG] discord.http: A rate limit bucket (3e32a240d3716487d7d8f6dae6c54f6b) has been exhausted. Pre-emptively rate limiting...
+2026-04-02 11:10:28 [DEBUG] discord.http: PUT https://discord.com/api/v10/applications/1488466672359575694/commands has received [{'id': '1488470695997608007', 'application_id': '1488466672359575694', 'version': '1488470695997608008', 'default_member_permissions': None, 'type': 1, 'name': 'routes', 'name_localizations': None, 'description': 'Показать маршруты', 'description_localizations': None, 'dm_permission': True, 'contexts': None, 'integration_types': [0, 1], 'nsfw': False}]
+2026-04-02 11:10:29 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 4, "opcode": 289, ...56-bba7-9e31e14e692f"}}' [110 bytes]
+2026-04-02 11:10:29 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":4,"opcode":289,"payload...resAt":1775117518825}}}' [88 bytes]
+2026-04-02 11:10:34 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 5, "opcode": 289, ...56-bba7-9e31e14e692f"}}' [110 bytes]
+2026-04-02 11:10:34 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":5,"opcode":289,"payload...resAt":1775117518825}}}' [88 bytes]
+2026-04-02 11:10:39 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 6, "opcode": 289, ...56-bba7-9e31e14e692f"}}' [110 bytes]
+2026-04-02 11:10:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":6,"opcode":289,"payload...resAt":1775117518825}}}' [110 bytes]
+2026-04-02 11:10:40 [INFO] pymax.core: QR login confirmed
+2026-04-02 11:10:40 [INFO] pymax.core: QR login successful
+2026-04-02 11:10:40 [INFO] pymax.core: Getting QR login data
+2026-04-02 11:10:40 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 7, "opcode": 291, ...56-bba7-9e31e14e692f"}}' [110 bytes]
+2026-04-02 11:10:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":7,"opcode":291,"payload...8212,"id":229703329}}}}' [1042 bytes]
+2026-04-02 11:10:40 [INFO] pymax.core: Login successful, token saved to database
+2026-04-02 11:10:40 [INFO] pymax.core: Starting initial sync
+2026-04-02 11:10:40 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 8, "opcode": 19, "..."buildNumber": 38859}}}' [1331 bytes]
+2026-04-02 11:10:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":8,"opcode":19,"payload"...YWtNX5JTLXWzucoW0q7w"}}' [10575 bytes]
+2026-04-02 11:10:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":0,"seq":1,"opcode":292,"payload...6,"showTime":86400000}}' [111 bytes]
+2026-04-02 11:10:40 [INFO] pymax.core: Sync completed: dialogs=3 chats=2 channels=0
+2026-04-02 11:10:40 [INFO] adapters.max.adapter: Max adapter started, 5 chats registered
+2026-04-02 11:10:40 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 9, "opcode": 1, "p... {"interactive": true}}' [78 bytes]
+2026-04-02 11:10:40 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 10, "opcode": 5, "...id": 1775117424642}}]}}' [263 bytes]
+2026-04-02 11:10:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":9,"opcode":1,"payload":null}' [52 bytes]
+2026-04-02 11:10:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":10,"opcode":5,"payload":null}' [53 bytes]
+2026-04-02 11:10:40 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 11, "opcode": 5, "...id": 1775117424642}}]}}' [258 bytes]
+2026-04-02 11:10:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":11,"opcode":5,"payload":null}' [53 bytes]
+2026-04-02 11:10:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":0,"seq":2,"opcode":128,"payload...:"116305693444037535"}}' [833 bytes]
+2026-04-02 11:10:40 [DEBUG] core.bus: No routes for max/230208250 — dropping
+2026-04-02 11:10:40 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 12, "opcode": 128,... "116334096594332154"}}' [116 bytes]
+2026-04-02 11:10:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":3,"seq":12,"opcode":128,"payloa...:"Неизвестный opcode"}}' [199 bytes]
+2026-04-02 11:10:40 [DEBUG] websockets.client: < EOF
+2026-04-02 11:10:40 [DEBUG] websockets.client: < EOF
+2026-04-02 11:10:40 [DEBUG] websockets.client: > EOF
+2026-04-02 11:10:40 [DEBUG] websockets.client: = connection is CLOSED
+2026-04-02 11:10:40 [DEBUG] websockets.client: x closing TCP connection
+2026-04-02 11:10:40 [INFO] pymax.core: Client start() cleaned up
+2026-04-02 11:10:40 [INFO] pymax.core: Reconnect enabled — restarting client
+2026-04-02 11:10:41 [INFO] pymax.core: Connecting to WebSocket wss://ws-api.oneme.ru/websocket
+2026-04-02 11:10:41 [DEBUG] websockets.client: = connection is CONNECTING
+2026-04-02 11:10:41 [DEBUG] websockets.client: > GET /websocket HTTP/1.1
+2026-04-02 11:10:41 [DEBUG] websockets.client: > Host: ws-api.oneme.ru
+2026-04-02 11:10:41 [DEBUG] websockets.client: > Origin: https://web.max.ru
+2026-04-02 11:10:41 [DEBUG] websockets.client: > Upgrade: websocket
+2026-04-02 11:10:41 [DEBUG] websockets.client: > Connection: Upgrade
+2026-04-02 11:10:41 [DEBUG] websockets.client: > Sec-WebSocket-Key: 1kJkrbX8M5ZcmTYDNYLC4w==
+2026-04-02 11:10:41 [DEBUG] websockets.client: > Sec-WebSocket-Version: 13
+2026-04-02 11:10:41 [DEBUG] websockets.client: > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-02 11:10:41 [DEBUG] websockets.client: > User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_7_13 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) EdgiOS/131.0.2903.86 Version/16.0 Mobile/15E148 Safari/604.1
+2026-04-02 11:10:41 [DEBUG] websockets.client: < HTTP/1.1 101 Switching Protocols
+2026-04-02 11:10:41 [DEBUG] websockets.client: < upgrade: websocket
+2026-04-02 11:10:41 [DEBUG] websockets.client: < connection: upgrade
+2026-04-02 11:10:41 [DEBUG] websockets.client: < sec-websocket-accept: SvByL2vHCQNw7Nu5Fmb+z8vumXs=
+2026-04-02 11:10:41 [DEBUG] websockets.client: < sec-websocket-extensions: permessage-deflate
+2026-04-02 11:10:41 [DEBUG] websockets.client: = connection is OPEN
+2026-04-02 11:10:41 [INFO] pymax.core: WebSocket connected, starting handshake
+2026-04-02 11:10:41 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 13, "opcode": 6, "..."buildNumber": 38859}}}' [549 bytes]
+2026-04-02 11:10:41 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":13,"opcode":6,"payload"..."GE"],"location":"RU"}}' [154 bytes]
+2026-04-02 11:10:41 [INFO] pymax.core: Handshake completed
+2026-04-02 11:10:41 [INFO] pymax.core: Starting initial sync
+2026-04-02 11:10:41 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 14, "opcode": 19, ..."buildNumber": 38859}}}' [1332 bytes]
+2026-04-02 11:10:41 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":14,"opcode":19,"payload...GTgnMxtyQd39tT9rv7oA"}}' [10593 bytes]
+2026-04-02 11:10:41 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":0,"seq":1,"opcode":292,"payload...6,"showTime":86400000}}' [111 bytes]
+2026-04-02 11:10:41 [INFO] pymax.core: Sync completed: dialogs=6 chats=4 channels=0
+2026-04-02 11:10:41 [INFO] adapters.max.adapter: Max adapter started, 10 chats registered
+2026-04-02 11:10:41 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 15, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-02 11:10:41 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 16, "opcode": 5, "...id": 1775117424642}}]}}' [263 bytes]
+2026-04-02 11:10:41 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":15,"opcode":1,"payload":null}' [53 bytes]
+2026-04-02 11:10:41 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":16,"opcode":5,"payload":null}' [53 bytes]
+2026-04-02 11:10:41 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 17, "opcode": 5, "...id": 1775117424642}}]}}' [258 bytes]
+2026-04-02 11:10:41 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":17,"opcode":5,"payload":null}' [53 bytes]
+2026-04-02 11:10:43 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":0,"seq":2,"opcode":130,"payload...,"mark":1775117442978}}' [141 bytes]
+2026-04-02 11:10:43 [INFO] pymax.core: Fetching users count=1
+2026-04-02 11:10:43 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 18, "opcode": 32, ...contactIds": [543835]}}' [83 bytes]
+2026-04-02 11:10:43 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":18,"opcode":32,"payload...WB1deLcHq0eIThDLAI"}]}}' [562 bytes]
+2026-04-02 11:10:43 [DEBUG] adapters.max.adapter: Cached user name: 543835 → MAX
+2026-04-02 11:11:01 [DEBUG] websockets.client: > PING 00 72 48 b5 [binary, 4 bytes]
+2026-04-02 11:11:01 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-02 11:11:01 [DEBUG] websockets.client: < PONG 00 72 48 b5 [binary, 4 bytes]
+2026-04-02 11:11:01 [DEBUG] websockets.client: % received keepalive pong
+2026-04-02 11:11:02 [INFO] adapters.discord.adapter: Discord adapter ready: BRIDGE#8720
+2026-04-02 11:11:07 [DEBUG] discord.gateway: Keeping shard ID None websocket alive with sequence 2.
+2026-04-02 11:11:07 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2026-04-02 11:11:11 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 19, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-02 11:11:12 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":19,"opcode":1,"payload":null}' [53 bytes]
+2026-04-02 11:11:14 [INFO] aiogram.event: Update id=897338313 is handled. Duration 482 ms by bot id=8289166189
+2026-04-02 11:11:16 [INFO] aiogram.event: Update id=897338314 is handled. Duration 369 ms by bot id=8289166189
+2026-04-02 11:11:17 [INFO] aiogram.event: Update id=897338315 is handled. Duration 348 ms by bot id=8289166189
+2026-04-02 11:11:20 [INFO] aiogram.event: Update id=897338316 is handled. Duration 3 ms by bot id=8289166189
+2026-04-02 11:11:20 [INFO] pymax.core: Sending message to chat_id=-72723141257889 notify=True
+2026-04-02 11:11:20 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 20, "opcode": 64, ...null}, "notify": true}}' [250 bytes]
+2026-04-02 11:11:20 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":20,"opcode":64,"payload...,"mark":1775117480750}}' [263 bytes]
+2026-04-02 11:11:21 [DEBUG] websockets.client: > PING 95 06 b8 e0 [binary, 4 bytes]
+2026-04-02 11:11:21 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-02 11:11:21 [DEBUG] websockets.client: < PONG 95 06 b8 e0 [binary, 4 bytes]
+2026-04-02 11:11:21 [DEBUG] websockets.client: % received keepalive pong
+2026-04-02 11:11:25 [INFO] aiogram.event: Update id=897338317 is handled. Duration 2 ms by bot id=8289166189
+2026-04-02 11:11:25 [INFO] pymax.core: Sending message to chat_id=-72723141257889 notify=True
+2026-04-02 11:11:25 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 21, "opcode": 64, ...null}, "notify": true}}' [269 bytes]
+2026-04-02 11:11:25 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":21,"opcode":64,"payload...,"mark":1775117485197}}' [270 bytes]
+2026-04-02 11:11:41 [DEBUG] websockets.client: > PING 47 c7 06 05 [binary, 4 bytes]
+2026-04-02 11:11:41 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-02 11:11:41 [DEBUG] websockets.client: < PONG 47 c7 06 05 [binary, 4 bytes]
+2026-04-02 11:11:41 [DEBUG] websockets.client: % received keepalive pong
+2026-04-02 11:11:42 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 22, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-02 11:11:42 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":22,"opcode":1,"payload":null}' [53 bytes]
+2026-04-02 11:11:48 [DEBUG] discord.gateway: Keeping shard ID None websocket alive with sequence 2.
+2026-04-02 11:11:48 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2026-04-02 11:12:01 [DEBUG] websockets.client: > PING c1 12 02 08 [binary, 4 bytes]
+2026-04-02 11:12:01 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-02 11:12:01 [DEBUG] websockets.client: < PONG c1 12 02 08 [binary, 4 bytes]
+2026-04-02 11:12:01 [DEBUG] websockets.client: % received keepalive pong
+2026-04-02 11:12:12 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 23, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-02 11:12:12 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":23,"opcode":1,"payload":null}' [53 bytes]
+2026-04-02 11:12:21 [DEBUG] websockets.client: > PING 'QK2$' [text, 4 bytes]
+2026-04-02 11:12:21 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-02 11:12:21 [DEBUG] websockets.client: < PONG 'QK2$' [text, 4 bytes]
+2026-04-02 11:12:21 [DEBUG] websockets.client: % received keepalive pong
+2026-04-02 11:12:25 [DEBUG] discord.gateway: Received WSMessage(type=<WSMsgType.CLOSED: 257>, data=None, extra=None)
+2026-04-02 11:12:25 [DEBUG] discord.gateway: Websocket closed with 1006, attempting a reconnect.
+2026-04-02 11:12:25 [DEBUG] discord.client: Got a request to RESUME the websocket.
+2026-04-02 11:12:25 [DEBUG] discord.client: Dispatching event disconnect
+2026-04-02 11:12:25 [DEBUG] discord.gateway: Created websocket connected to wss://gateway-us-east1-d.discord.gg
+2026-04-02 11:12:25 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-arm-us-east1-d-bvvm",{"micros":0.0}]']}}
+2026-04-02 11:12:25 [DEBUG] discord.gateway: Shard ID None has sent the RESUME payload.
+2026-04-02 11:12:26 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2026-04-02 11:12:26 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'RESUMED', 's': 3, 'op': 0, 'd': {'_trace': ['["gateway-prd-arm-us-east1-d-bvvm",{"micros":613,"calls":["id_created",{"micros":0,"calls":[]},"session_lookup_time",{"micros":242,"calls":[]},"session_lookup_finished",{"micros":9,"calls":[]},"sessions-prd-gcp-us-east1-d-44",{"micros":17}]}]']}}
+2026-04-02 11:12:26 [DEBUG] discord.client: Dispatching event socket_event_type
+2026-04-02 11:12:26 [INFO] discord.gateway: Shard ID None has successfully RESUMED session 423b6573801fd9b8e9e984e9714f95af.
+2026-04-02 11:12:26 [DEBUG] discord.client: Dispatching event resumed
+2026-04-02 11:12:41 [DEBUG] websockets.client: > PING fa 29 76 51 [binary, 4 bytes]
+2026-04-02 11:12:41 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-02 11:12:41 [DEBUG] websockets.client: < PONG fa 29 76 51 [binary, 4 bytes]
+2026-04-02 11:12:41 [DEBUG] websockets.client: % received keepalive pong
+2026-04-02 11:12:42 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 24, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-02 11:12:42 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":24,"opcode":1,"payload":null}' [53 bytes]
+2026-04-02 11:13:01 [DEBUG] websockets.client: > PING 8a 5f fe 18 [binary, 4 bytes]
+2026-04-02 11:13:01 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-02 11:13:01 [DEBUG] websockets.client: < PONG 8a 5f fe 18 [binary, 4 bytes]
+2026-04-02 11:13:01 [DEBUG] websockets.client: % received keepalive pong
+2026-04-02 11:13:07 [DEBUG] discord.gateway: Keeping shard ID None websocket alive with sequence 3.
+2026-04-02 11:13:07 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2026-04-02 11:13:12 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 25, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-02 11:13:12 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":25,"opcode":1,"payload":null}' [53 bytes]
+2026-04-02 11:13:21 [DEBUG] websockets.client: > PING 9b 2f b2 96 [binary, 4 bytes]
+2026-04-02 11:13:21 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-02 11:13:21 [DEBUG] websockets.client: < PONG 9b 2f b2 96 [binary, 4 bytes]
+2026-04-02 11:13:21 [DEBUG] websockets.client: % received keepalive pong
+2026-04-02 11:13:41 [DEBUG] websockets.client: > PING fe 7c fe 82 [binary, 4 bytes]
+2026-04-02 11:13:41 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-02 11:13:41 [DEBUG] websockets.client: < PONG fe 7c fe 82 [binary, 4 bytes]
+2026-04-02 11:13:41 [DEBUG] websockets.client: % received keepalive pong
+2026-04-02 11:13:42 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 26, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-02 11:13:42 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":26,"opcode":1,"payload":null}' [53 bytes]
+2026-04-02 11:13:48 [DEBUG] discord.gateway: Keeping shard ID None websocket alive with sequence 3.
+2026-04-02 11:13:48 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2026-04-03 13:04:18 [WARNING] discord.client: PyNaCl is not installed, voice will NOT be supported
+2026-04-03 13:04:18 [WARNING] discord.client: davey is not installed, voice will NOT be supported
+2026-04-03 13:04:18 [DEBUG] discord.client: on_ready has successfully been registered as an event
+2026-04-03 13:04:18 [DEBUG] discord.client: on_guild_channel_create has successfully been registered as an event
+2026-04-03 13:04:18 [DEBUG] discord.client: on_message has successfully been registered as an event
+2026-04-03 13:04:18 [INFO] core.bus: Adapter registered: max
+2026-04-03 13:04:18 [INFO] core.bus: Adapter registered: telegram
+2026-04-03 13:04:18 [INFO] core.bus: Adapter registered: discord
+2026-04-03 13:04:18 [INFO] core.bus: MessageBus worker started
+2026-04-03 13:04:18 [INFO] pymax.core: Client starting
+2026-04-03 13:04:18 [INFO] pymax.core: Connecting to WebSocket wss://ws-api.oneme.ru/websocket
+2026-04-03 13:04:18 [INFO] adapters.telegram.adapter: Telegram adapter started
+2026-04-03 13:04:18 [INFO] adapters.discord.adapter: Discord adapter starting
+2026-04-03 13:04:18 [INFO] aiogram.dispatcher: Start polling
+2026-04-03 13:04:18 [INFO] discord.client: logging in using static token
+2026-04-03 13:04:18 [DEBUG] websockets.client: = connection is CONNECTING
+2026-04-03 13:04:18 [DEBUG] websockets.client: > GET /websocket HTTP/1.1
+2026-04-03 13:04:18 [DEBUG] websockets.client: > Host: ws-api.oneme.ru
+2026-04-03 13:04:18 [DEBUG] websockets.client: > Origin: https://web.max.ru
+2026-04-03 13:04:18 [DEBUG] websockets.client: > Upgrade: websocket
+2026-04-03 13:04:18 [DEBUG] websockets.client: > Connection: Upgrade
+2026-04-03 13:04:18 [DEBUG] websockets.client: > Sec-WebSocket-Key: NNfmfPt95q7gPnVKMG/mzQ==
+2026-04-03 13:04:18 [DEBUG] websockets.client: > Sec-WebSocket-Version: 13
+2026-04-03 13:04:18 [DEBUG] websockets.client: > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-03 13:04:18 [DEBUG] websockets.client: > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0
+2026-04-03 13:04:19 [DEBUG] websockets.client: < HTTP/1.1 101 Switching Protocols
+2026-04-03 13:04:19 [DEBUG] websockets.client: < upgrade: websocket
+2026-04-03 13:04:19 [DEBUG] websockets.client: < connection: upgrade
+2026-04-03 13:04:19 [DEBUG] websockets.client: < sec-websocket-accept: 37/T1/dd/aLUoVEGaujgUWU27x4=
+2026-04-03 13:04:19 [DEBUG] websockets.client: < sec-websocket-extensions: permessage-deflate
+2026-04-03 13:04:19 [DEBUG] websockets.client: = connection is OPEN
+2026-04-03 13:04:19 [INFO] pymax.core: WebSocket connected, starting handshake
+2026-04-03 13:04:19 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 1, "opcode": 6, "p..."buildNumber": 38859}}}' [522 bytes]
+2026-04-03 13:04:19 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":1,"opcode":6,"payload":..."GE"],"location":"RU"}}' [153 bytes]
+2026-04-03 13:04:19 [INFO] pymax.core: Handshake completed
+2026-04-03 13:04:19 [INFO] pymax.core: Starting initial sync
+2026-04-03 13:04:19 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 2, "opcode": 19, "..."buildNumber": 38859}}}' [1305 bytes]
+2026-04-03 13:04:19 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":2,"opcode":19,"payload"...hjWEiyLo8R6W_ncpoXKY"}}' [10567 bytes]
+2026-04-03 13:04:19 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":0,"seq":1,"opcode":292,"payload...6,"showTime":86400000}}' [111 bytes]
+2026-04-03 13:04:19 [INFO] pymax.core: Sync completed: dialogs=3 chats=2 channels=0
+2026-04-03 13:04:19 [INFO] adapters.max.adapter: Max adapter started, 5 chats registered
+2026-04-03 13:04:19 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 3, "opcode": 1, "p... {"interactive": true}}' [78 bytes]
+2026-04-03 13:04:19 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 4, "opcode": 5, "p...id": 1775210658871}}]}}' [262 bytes]
+2026-04-03 13:04:19 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":3,"opcode":1,"payload":null}' [52 bytes]
+2026-04-03 13:04:19 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":4,"opcode":5,"payload":null}' [52 bytes]
+2026-04-03 13:04:19 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 5, "opcode": 5, "p...id": 1775210658871}}]}}' [257 bytes]
+2026-04-03 13:04:19 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":5,"opcode":5,"payload":null}' [52 bytes]
+2026-04-03 13:04:19 [INFO] aiogram.dispatcher: Run polling for bot @max_tg_bridge_s_bot id=8289166189 - 'TIHA Bridge'
+2026-04-03 13:04:19 [DEBUG] discord.http: GET https://discord.com/api/v10/users/@me with None has returned 200
+2026-04-03 13:04:19 [DEBUG] discord.http: GET /users/@me has found its initial rate limit bucket hash (78bb8553d9352a5a2f89f9def401287a).
+2026-04-03 13:04:19 [DEBUG] discord.http: GET https://discord.com/api/v10/users/@me has received {'id': '1488466672359575694', 'username': 'BRIDGE', 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c', 'discriminator': '8720', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None, 'mfa_enabled': True, 'locale': 'en-US', 'premium_type': 0, 'email': None, 'verified': True, 'bio': ''}
+2026-04-03 13:04:19 [DEBUG] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me with None has returned 200
+2026-04-03 13:04:19 [DEBUG] discord.http: GET /oauth2/applications/@me has found its initial rate limit bucket hash (d28a133af187e91d71d96a223467ce49).
+2026-04-03 13:04:19 [DEBUG] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me has received {'id': '1488466672359575694', 'name': 'BRIDGE', 'icon': 'a4537a16a2592def5eb7697a07e0ee9c', 'description': 'Max-Telegram-Discord bridge bot', 'type': None, 'bot': {'id': '1488466672359575694', 'username': 'BRIDGE', 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c', 'discriminator': '8720', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None}, 'summary': '', 'is_monetized': False, 'is_verified': False, 'is_discoverable': False, 'bot_public': True, 'bot_require_code_grant': False, 'install_params': {'scopes': ['applications.commands'], 'permissions': '0'}, 'integration_types_config': {'0': {'oauth2_install_params': {'scopes': ['applications.commands'], 'permissions': '0'}}, '1': {'oauth2_install_params': {'scopes': ['applications.commands'], 'permissions': '0'}}}, 'verify_key': '158f8e4aa5be97a1cc30d6168df83779d3ee7febaa334a4561149f21703df18f', 'flags': 11042816, 'hook': True, 'storefront_available': False, 'redirect_uris': [], 'interactions_endpoint_url': None, 'role_connections_verification_url': None, 'owner': {'id': '941848879672987658', 'username': 'm1notaur_studio', 'avatar': '053c9507b6bc715a7c95cf8f95b63eab', 'discriminator': '0', 'public_flags': 128, 'flags': 128, 'banner': None, 'accent_color': 0, 'global_name': 'M1notaur_', 'avatar_decoration_data': {'asset': 'a_4539f720c2c576feca9de41b8dc413e8', 'sku_id': '1341506443882266624', 'expires_at': None}, 'collectibles': {'nameplate': {'sku_id': '1465519580016410746', 'asset': 'nameplates/blossoming_branch/1465519580016410746/', 'label': 'Swaying cherry blossom branch with petals blowing and gentle watercolor washes.', 'palette': 'bubble_gum'}}, 'display_name_styles': None, 'banner_color': '#000000', 'clan': None, 'primary_guild': None}, 'approximate_guild_count': 1, 'approximate_user_install_count': 0, 'approximate_user_authorization_count': 0, 'interactions_event_types': [], 'interactions_version': 1, 'explicit_content_filter': 0, 'rpc_application_state': 0, 'store_application_state': 1, 'verification_state': 1, 'integration_public': True, 'integration_require_code_grant': False, 'discoverability_state': 1, 'discovery_eligibility_flags': 2532, 'monetization_state': 1, 'verification_eligibility_flags': 123804, 'monetization_eligibility_flags': 247524, 'bot_approximate_guild_count': 1, 'team': None, 'internal_guild_restriction': 2, 'approved_consoles': [], 'pricing_localization_strategy': 'localized_price_sets'}
+2026-04-03 13:04:20 [DEBUG] discord.gateway: Created websocket connected to wss://gateway.discord.gg/
+2026-04-03 13:04:20 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-arm-us-east1-c-6991",{"micros":0.0}]']}}
+2026-04-03 13:04:20 [DEBUG] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2026-04-03 13:04:20 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2026-04-03 13:04:20 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 10, 'user_settings': {}, 'user': {'verified': True, 'username': 'BRIDGE', 'primary_guild': None, 'mfa_enabled': True, 'id': '1488466672359575694', 'global_name': None, 'flags': 0, 'email': None, 'discriminator': '8720', 'clan': None, 'bot': True, 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c'}, 'session_type': 'normal', 'session_id': '6d43fc19714887b06126935a5a71c072', 'resume_gateway_url': 'wss://gateway-us-east1-c.discord.gg', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '1488467858446094416'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['finland', 'helsinki', 'warsaw', 'stockholm', 'bucharest'], 'game_relationships': [], 'auth': {}, 'application': {'id': '1488466672359575694', 'flags_new': '11042816', 'flags': 11042816}, '_trace': ['["gateway-prd-arm-us-east1-c-6991",{"micros":314137,"calls":["id_created",{"micros":1302,"calls":[]},"session_lookup_time",{"micros":260,"calls":[]},"session_lookup_finished",{"micros":13,"calls":[]},"sessions-prd-gcp-us-east1-c-104",{"micros":312261,"calls":["start_session",{"micros":289437,"calls":["prd-rpc-664d567fd9-gpzx5",{"micros":113399,"calls":["get_user",{"micros":7190},"get_guilds",{"micros":4061},"send_scheduled_deletion_message",{"micros":14},"guild_join_requests",{"micros":14462},"authorized_ip_coro",{"micros":13},"pending_payments",{"micros":1854},"apex_experiments",{"micros":157621},"sessions_experiments",{"micros":9},"played_application_ids",{"micros":5},"linked_users",{"micros":13},"ad_personalization_toggles_disabled",{"micros":4},"regional_feature_config",{"micros":4}]}]},"starting_guild_connect",{"micros":34,"calls":[]},"presence_started",{"micros":378,"calls":[]},"guilds_started",{"micros":63,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":22302,"calls":[]},"connect_finished",{"micros":22317,"calls":[]},"build_ready",{"micros":13,"calls":[]},"clean_ready",{"micros":2,"calls":[]},"optimize_ready",{"micros":14,"calls":[]},"split_ready",{"micros":0,"calls":[]}]}]}]']}}
+2026-04-03 13:04:20 [DEBUG] discord.client: Dispatching event socket_event_type
+2026-04-03 13:04:20 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 6d43fc19714887b06126935a5a71c072).
+2026-04-03 13:04:20 [DEBUG] discord.client: Dispatching event connect
+2026-04-03 13:04:20 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'afk_timeout': 300, 'splash': None, 'default_message_notifications': 0, 'large': False, 'explicit_content_filter': 0, 'premium_progress_bar_enabled': False, 'max_video_channel_users': 25, 'incidents_data': None, 'profile': None, 'unavailable': False, 'stage_instances': [], 'verification_level': 0, 'soundboard_sounds': [], 'hub_type': None, 'emojis': [], 'features': [], 'id': '1488467858446094416', 'vanity_url_code': None, 'max_stage_video_channel_users': 50, 'name': 'TIHA-Bridge', 'system_channel_flags': 0, 'afk_channel_id': None, 'embedded_activities': [], 'nsfw': False, 'stickers': [], 'lazy': True, 'premium_features': None, 'region': 'deprecated', 'member_count': 3, 'home_header': None, 'threads': [], 'moderator_reporting': None, 'discovery_splash': None, 'inventory_settings': None, 'premium_progress_bar_enabled_user_updated_at': None, 'description': None, 'roles': [{'version': 1774948791946, 'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions': '2248473465835073', 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '1488467858446094416', 'icon': None, 'hoist': False, 'flags': 0, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}, {'version': 1774950562243, 'unicode_emoji': None, 'tags': {'bot_id': '1488466672359575694'}, 'position': 1, 'permissions': '2147585024', 'name': 'BRIDGE', 'mentionable': False, 'managed': True, 'id': '1488475283815403665', 'icon': None, 'hoist': False, 'flags': 0, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}], 'application_command_counts': {}, 'premium_tier': 0, 'members': [{'user': {'username': 'BRIDGE', 'public_flags': 0, 'primary_guild': None, 'id': '1488466672359575694', 'global_name': None, 'display_name_styles': None, 'display_name': None, 'discriminator': '8720', 'collectibles': None, 'bot': True, 'avatar_decoration_data': None, 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c'}, 'roles': ['1488475283815403665'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2026-03-31T09:49:22.258000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}], 'nsfw_level': 0, 'joined_at': '2026-03-31T09:49:22.258000+00:00', 'premium_subscription_count': 0, 'preferred_locale': 'en-US', 'safety_alerts_channel_id': None, 'system_channel_id': '1488467858903138395', 'voice_states': [], 'application_id': None, 'guild_scheduled_events': [], 'game_application_ids': None, 'public_updates_channel_id': None, 'activity_instances': [], 'mfa_level': 0, 'owner_id': '941848879672987658', 'max_members': 25000000, 'latest_onboarding_question_id': None, 'rules_channel_id': None, 'icon': None, 'version': 1774948838405, 'presences': [], 'banner': None, 'owner_configured_content_level': 0, 'channels': [{'version': 1774948791949, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Текстовые каналы', 'id': '1488467858446094417', 'flags': 0}, {'version': 1774948791961, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Голосовые каналы', 'id': '1488467858903138394', 'flags': 0}, {'version': 1774948791972, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1488467858446094417', 'name': 'основной', 'last_message_id': '1488807942944985160', 'id': '1488467858903138395', 'icon_emoji': {'name': '👋', 'id': None}, 'flags': 0}, {'version': 1774948791986, 'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1488467858903138394', 'name': 'Основной', 'last_message_id': None, 'id': '1488467858903138397', 'icon_emoji': {'name': '🎙', 'id': None}, 'flags': 0, 'bitrate': 64000}]}}
+2026-04-03 13:04:20 [DEBUG] discord.client: Dispatching event socket_event_type
+2026-04-03 13:04:20 [DEBUG] discord.client: Dispatching event guild_available
+2026-04-03 13:04:40 [WARNING] discord.client: PyNaCl is not installed, voice will NOT be supported
+2026-04-03 13:04:40 [WARNING] discord.client: davey is not installed, voice will NOT be supported
+2026-04-03 13:04:40 [DEBUG] discord.client: on_ready has successfully been registered as an event
+2026-04-03 13:04:40 [DEBUG] discord.client: on_guild_channel_create has successfully been registered as an event
+2026-04-03 13:04:40 [DEBUG] discord.client: on_message has successfully been registered as an event
+2026-04-03 13:04:40 [INFO] core.bus: Adapter registered: max
+2026-04-03 13:04:40 [INFO] core.bus: Adapter registered: telegram
+2026-04-03 13:04:40 [INFO] core.bus: Adapter registered: discord
+2026-04-03 13:04:40 [INFO] core.bus: MessageBus worker started
+2026-04-03 13:04:40 [INFO] pymax.core: Client starting
+2026-04-03 13:04:40 [INFO] pymax.core: Connecting to WebSocket wss://ws-api.oneme.ru/websocket
+2026-04-03 13:04:40 [INFO] adapters.telegram.adapter: Telegram adapter started
+2026-04-03 13:04:40 [INFO] adapters.discord.adapter: Discord adapter starting
+2026-04-03 13:04:40 [INFO] aiogram.dispatcher: Start polling
+2026-04-03 13:04:40 [INFO] discord.client: logging in using static token
+2026-04-03 13:04:40 [DEBUG] websockets.client: = connection is CONNECTING
+2026-04-03 13:04:40 [DEBUG] websockets.client: > GET /websocket HTTP/1.1
+2026-04-03 13:04:40 [DEBUG] websockets.client: > Host: ws-api.oneme.ru
+2026-04-03 13:04:40 [DEBUG] websockets.client: > Origin: https://web.max.ru
+2026-04-03 13:04:40 [DEBUG] websockets.client: > Upgrade: websocket
+2026-04-03 13:04:40 [DEBUG] websockets.client: > Connection: Upgrade
+2026-04-03 13:04:40 [DEBUG] websockets.client: > Sec-WebSocket-Key: 1N956AxN+h/HDKGYphjisw==
+2026-04-03 13:04:40 [DEBUG] websockets.client: > Sec-WebSocket-Version: 13
+2026-04-03 13:04:40 [DEBUG] websockets.client: > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-03 13:04:40 [DEBUG] websockets.client: > User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/137.0.7151.234 Mobile/15E148 Safari/604.1
+2026-04-03 13:04:40 [DEBUG] websockets.client: < HTTP/1.1 101 Switching Protocols
+2026-04-03 13:04:40 [DEBUG] websockets.client: < upgrade: websocket
+2026-04-03 13:04:40 [DEBUG] websockets.client: < connection: upgrade
+2026-04-03 13:04:40 [DEBUG] websockets.client: < sec-websocket-accept: VJuyWnzt5GPYZh+YZ16wLsm38mM=
+2026-04-03 13:04:40 [DEBUG] websockets.client: < sec-websocket-extensions: permessage-deflate
+2026-04-03 13:04:40 [DEBUG] websockets.client: = connection is OPEN
+2026-04-03 13:04:40 [INFO] pymax.core: WebSocket connected, starting handshake
+2026-04-03 13:04:40 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 1, "opcode": 6, "p..."buildNumber": 38859}}}' [531 bytes]
+2026-04-03 13:04:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":1,"opcode":6,"payload":..."GE"],"location":"RU"}}' [153 bytes]
+2026-04-03 13:04:40 [INFO] pymax.core: Handshake completed
+2026-04-03 13:04:40 [INFO] pymax.core: Starting initial sync
+2026-04-03 13:04:40 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 2, "opcode": 19, "..."buildNumber": 38859}}}' [1314 bytes]
+2026-04-03 13:04:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":2,"opcode":19,"payload"...Fc6h8X_xX7jC6kF7bMHc"}}' [10567 bytes]
+2026-04-03 13:04:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":0,"seq":1,"opcode":292,"payload...6,"showTime":86400000}}' [111 bytes]
+2026-04-03 13:04:40 [INFO] pymax.core: Sync completed: dialogs=3 chats=2 channels=0
+2026-04-03 13:04:40 [INFO] adapters.max.adapter: Max adapter started, 5 chats registered
+2026-04-03 13:04:40 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 3, "opcode": 1, "p... {"interactive": true}}' [78 bytes]
+2026-04-03 13:04:40 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 4, "opcode": 5, "p...id": 1775210680439}}]}}' [262 bytes]
+2026-04-03 13:04:40 [INFO] aiogram.dispatcher: Run polling for bot @max_tg_bridge_s_bot id=8289166189 - 'TIHA Bridge'
+2026-04-03 13:04:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":3,"opcode":1,"payload":null}' [52 bytes]
+2026-04-03 13:04:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":4,"opcode":5,"payload":null}' [52 bytes]
+2026-04-03 13:04:40 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 5, "opcode": 5, "p...id": 1775210680439}}]}}' [257 bytes]
+2026-04-03 13:04:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":5,"opcode":5,"payload":null}' [52 bytes]
+2026-04-03 13:04:40 [DEBUG] discord.http: GET https://discord.com/api/v10/users/@me with None has returned 200
+2026-04-03 13:04:40 [DEBUG] discord.http: GET /users/@me has found its initial rate limit bucket hash (78bb8553d9352a5a2f89f9def401287a).
+2026-04-03 13:04:40 [DEBUG] discord.http: GET https://discord.com/api/v10/users/@me has received {'id': '1488466672359575694', 'username': 'BRIDGE', 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c', 'discriminator': '8720', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None, 'mfa_enabled': True, 'locale': 'en-US', 'premium_type': 0, 'email': None, 'verified': True, 'bio': ''}
+2026-04-03 13:04:41 [DEBUG] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me with None has returned 200
+2026-04-03 13:04:41 [DEBUG] discord.http: GET /oauth2/applications/@me has found its initial rate limit bucket hash (d28a133af187e91d71d96a223467ce49).
+2026-04-03 13:04:41 [DEBUG] discord.http: GET https://discord.com/api/v10/oauth2/applications/@me has received {'id': '1488466672359575694', 'name': 'BRIDGE', 'icon': 'a4537a16a2592def5eb7697a07e0ee9c', 'description': 'Max-Telegram-Discord bridge bot', 'type': None, 'bot': {'id': '1488466672359575694', 'username': 'BRIDGE', 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c', 'discriminator': '8720', 'public_flags': 0, 'flags': 0, 'bot': True, 'banner': None, 'accent_color': None, 'global_name': None, 'avatar_decoration_data': None, 'collectibles': None, 'display_name_styles': None, 'banner_color': None, 'clan': None, 'primary_guild': None}, 'summary': '', 'is_monetized': False, 'is_verified': False, 'is_discoverable': False, 'bot_public': True, 'bot_require_code_grant': False, 'install_params': {'scopes': ['applications.commands'], 'permissions': '0'}, 'integration_types_config': {'0': {'oauth2_install_params': {'scopes': ['applications.commands'], 'permissions': '0'}}, '1': {'oauth2_install_params': {'scopes': ['applications.commands'], 'permissions': '0'}}}, 'verify_key': '158f8e4aa5be97a1cc30d6168df83779d3ee7febaa334a4561149f21703df18f', 'flags': 11042816, 'hook': True, 'storefront_available': False, 'redirect_uris': [], 'interactions_endpoint_url': None, 'role_connections_verification_url': None, 'owner': {'id': '941848879672987658', 'username': 'm1notaur_studio', 'avatar': '053c9507b6bc715a7c95cf8f95b63eab', 'discriminator': '0', 'public_flags': 128, 'flags': 128, 'banner': None, 'accent_color': 0, 'global_name': 'M1notaur_', 'avatar_decoration_data': {'asset': 'a_4539f720c2c576feca9de41b8dc413e8', 'sku_id': '1341506443882266624', 'expires_at': None}, 'collectibles': {'nameplate': {'sku_id': '1465519580016410746', 'asset': 'nameplates/blossoming_branch/1465519580016410746/', 'label': 'Swaying cherry blossom branch with petals blowing and gentle watercolor washes.', 'palette': 'bubble_gum'}}, 'display_name_styles': None, 'banner_color': '#000000', 'clan': None, 'primary_guild': None}, 'approximate_guild_count': 1, 'approximate_user_install_count': 0, 'approximate_user_authorization_count': 0, 'interactions_event_types': [], 'interactions_version': 1, 'explicit_content_filter': 0, 'rpc_application_state': 0, 'store_application_state': 1, 'verification_state': 1, 'integration_public': True, 'integration_require_code_grant': False, 'discoverability_state': 1, 'discovery_eligibility_flags': 2532, 'monetization_state': 1, 'verification_eligibility_flags': 123804, 'monetization_eligibility_flags': 247524, 'bot_approximate_guild_count': 1, 'team': None, 'internal_guild_restriction': 2, 'approved_consoles': [], 'pricing_localization_strategy': 'localized_price_sets'}
+2026-04-03 13:04:41 [DEBUG] discord.gateway: Created websocket connected to wss://gateway.discord.gg/
+2026-04-03 13:04:41 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 10, 'd': {'heartbeat_interval': 41250, '_trace': ['["gateway-prd-arm-us-east1-b-3cvm",{"micros":0.0}]']}}
+2026-04-03 13:04:41 [DEBUG] discord.gateway: Shard ID None has sent the IDENTIFY payload.
+2026-04-03 13:04:41 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': None, 's': None, 'op': 11, 'd': None}
+2026-04-03 13:04:42 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'READY', 's': 1, 'op': 0, 'd': {'v': 10, 'user_settings': {}, 'user': {'verified': True, 'username': 'BRIDGE', 'primary_guild': None, 'mfa_enabled': True, 'id': '1488466672359575694', 'global_name': None, 'flags': 0, 'email': None, 'discriminator': '8720', 'clan': None, 'bot': True, 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c'}, 'session_type': 'normal', 'session_id': '7e97c289fdde820faf256fb635a5d07a', 'resume_gateway_url': 'wss://gateway-us-east1-b.discord.gg', 'relationships': [], 'private_channels': [], 'presences': [], 'guilds': [{'unavailable': True, 'id': '1488467858446094416'}], 'guild_join_requests': [], 'geo_ordered_rtc_regions': ['finland', 'helsinki', 'warsaw', 'stockholm', 'bucharest'], 'game_relationships': [], 'auth': {}, 'application': {'id': '1488466672359575694', 'flags_new': '11042816', 'flags': 11042816}, '_trace': ['["gateway-prd-arm-us-east1-b-3cvm",{"micros":609745,"calls":["id_created",{"micros":2167,"calls":[]},"session_lookup_time",{"micros":298,"calls":[]},"session_lookup_finished",{"micros":12,"calls":[]},"sessions-prd-gcp-us-east1-b-93",{"micros":605833,"calls":["start_session",{"micros":519717,"calls":["prd-rpc-664d567fd9-9mfdb",{"micros":138751,"calls":["get_user",{"micros":42613},"get_guilds",{"micros":5664},"send_scheduled_deletion_message",{"micros":19},"guild_join_requests",{"micros":3},"authorized_ip_coro",{"micros":13},"pending_payments",{"micros":8538},"apex_experiments",{"micros":362721},"sessions_experiments",{"micros":5},"played_application_ids",{"micros":4},"linked_users",{"micros":3},"ad_personalization_toggles_disabled",{"micros":3},"regional_feature_config",{"micros":3}]}]},"starting_guild_connect",{"micros":35,"calls":[]},"presence_started",{"micros":337,"calls":[]},"guilds_started",{"micros":68,"calls":[]},"lobbies_started",{"micros":1,"calls":[]},"guilds_connect",{"micros":1,"calls":[]},"presence_connect",{"micros":85621,"calls":[]},"connect_finished",{"micros":85643,"calls":[]},"build_ready",{"micros":14,"calls":[]},"clean_ready",{"micros":16,"calls":[]},"optimize_ready",{"micros":0,"calls":[]},"split_ready",{"micros":1,"calls":[]}]}]}]']}}
+2026-04-03 13:04:42 [DEBUG] discord.client: Dispatching event socket_event_type
+2026-04-03 13:04:42 [INFO] discord.gateway: Shard ID None has connected to Gateway (Session ID: 7e97c289fdde820faf256fb635a5d07a).
+2026-04-03 13:04:42 [DEBUG] discord.client: Dispatching event connect
+2026-04-03 13:04:42 [DEBUG] discord.gateway: For Shard ID None: WebSocket Event: {'t': 'GUILD_CREATE', 's': 2, 'op': 0, 'd': {'premium_tier': 0, 'max_video_channel_users': 25, 'members': [{'user': {'username': 'BRIDGE', 'public_flags': 0, 'primary_guild': None, 'id': '1488466672359575694', 'global_name': None, 'display_name_styles': None, 'display_name': None, 'discriminator': '8720', 'collectibles': None, 'bot': True, 'avatar_decoration_data': None, 'avatar': 'a4537a16a2592def5eb7697a07e0ee9c'}, 'roles': ['1488475283815403665'], 'premium_since': None, 'pending': False, 'nick': None, 'mute': False, 'joined_at': '2026-03-31T09:49:22.258000+00:00', 'flags': 0, 'deaf': False, 'communication_disabled_until': None, 'banner': None, 'avatar': None}], 'inventory_settings': None, 'hub_type': None, 'profile': None, 'embedded_activities': [], 'owner_id': '941848879672987658', 'discovery_splash': None, 'joined_at': '2026-03-31T09:49:22.258000+00:00', 'explicit_content_filter': 0, 'splash': None, 'moderator_reporting': None, 'features': [], 'activity_instances': [], 'id': '1488467858446094416', 'unavailable': False, 'region': 'deprecated', 'roles': [{'version': 1774948791946, 'unicode_emoji': None, 'tags': {}, 'position': 0, 'permissions': '2248473465835073', 'name': '@everyone', 'mentionable': False, 'managed': False, 'id': '1488467858446094416', 'icon': None, 'hoist': False, 'flags': 0, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}, {'version': 1774950562243, 'unicode_emoji': None, 'tags': {'bot_id': '1488466672359575694'}, 'position': 1, 'permissions': '2147585024', 'name': 'BRIDGE', 'mentionable': False, 'managed': True, 'id': '1488475283815403665', 'icon': None, 'hoist': False, 'flags': 0, 'colors': {'tertiary_color': None, 'secondary_color': None, 'primary_color': 0}, 'color': 0}], 'channels': [{'version': 1774948791949, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Текстовые каналы', 'id': '1488467858446094417', 'flags': 0}, {'version': 1774948791961, 'type': 4, 'position': 0, 'permission_overwrites': [], 'name': 'Голосовые каналы', 'id': '1488467858903138394', 'flags': 0}, {'version': 1774948791972, 'type': 0, 'topic': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1488467858446094417', 'name': 'основной', 'last_message_id': '1488807942944985160', 'id': '1488467858903138395', 'icon_emoji': {'name': '👋', 'id': None}, 'flags': 0}, {'version': 1774948791986, 'user_limit': 0, 'type': 2, 'rtc_region': None, 'rate_limit_per_user': 0, 'position': 0, 'permission_overwrites': [], 'parent_id': '1488467858903138394', 'name': 'Основной', 'last_message_id': None, 'id': '1488467858903138397', 'icon_emoji': {'name': '🎙', 'id': None}, 'flags': 0, 'bitrate': 64000}], 'system_channel_flags': 0, 'name': 'TIHA-Bridge', 'nsfw_level': 0, 'afk_timeout': 300, 'application_command_counts': {}, 'preferred_locale': 'en-US', 'system_channel_id': '1488467858903138395', 'safety_alerts_channel_id': None, 'threads': [], 'stickers': [], 'afk_channel_id': None, 'premium_progress_bar_enabled': False, 'nsfw': False, 'large': False, 'rules_channel_id': None, 'premium_progress_bar_enabled_user_updated_at': None, 'description': None, 'lazy': True, 'public_updates_channel_id': None, 'guild_scheduled_events': [], 'latest_onboarding_question_id': None, 'member_count': 3, 'presences': [], 'soundboard_sounds': [], 'owner_configured_content_level': 0, 'default_message_notifications': 0, 'vanity_url_code': None, 'max_stage_video_channel_users': 50, 'home_header': None, 'banner': None, 'game_application_ids': None, 'voice_states': [], 'icon': None, 'mfa_level': 0, 'verification_level': 0, 'version': 1774948838405, 'premium_features': None, 'application_id': None, 'premium_subscription_count': 0, 'incidents_data': None, 'stage_instances': [], 'max_members': 25000000, 'emojis': []}}
+2026-04-03 13:04:42 [DEBUG] discord.client: Dispatching event socket_event_type
+2026-04-03 13:04:42 [DEBUG] discord.client: Dispatching event guild_available
+2026-04-03 13:04:44 [DEBUG] discord.client: Dispatching event ready
+2026-04-03 13:04:44 [DEBUG] discord.http: PUT https://discord.com/api/v10/applications/1488466672359575694/commands with [{"name":"routes","description":"\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u043c\u0430\u0440\u0448\u0440\u0443\u0442\u044b","type":1,"options":[],"nsfw":false,"dm_permission":true,"default_member_permissions":null,"contexts":null,"integration_types":null}] has returned 200
+2026-04-03 13:04:44 [DEBUG] discord.http: PUT /applications/{application_id}/commands has found its initial rate limit bucket hash (3e32a240d3716487d7d8f6dae6c54f6b).
+2026-04-03 13:04:44 [DEBUG] discord.http: PUT https://discord.com/api/v10/applications/1488466672359575694/commands has received [{'id': '1488470695997608007', 'application_id': '1488466672359575694', 'version': '1488470695997608008', 'default_member_permissions': None, 'type': 1, 'name': 'routes', 'name_localizations': None, 'description': 'Показать маршруты', 'description_localizations': None, 'dm_permission': True, 'contexts': None, 'integration_types': [0, 1], 'nsfw': False}]
+2026-04-03 13:04:44 [INFO] adapters.discord.adapter: Discord adapter ready: BRIDGE#8720
+2026-04-03 13:15:33 [WARNING] discord.client: PyNaCl is not installed, voice will NOT be supported
+2026-04-03 13:15:33 [WARNING] discord.client: davey is not installed, voice will NOT be supported
+2026-04-03 13:15:33 [DEBUG] discord.client: on_ready has successfully been registered as an event
+2026-04-03 13:15:33 [DEBUG] discord.client: on_guild_channel_create has successfully been registered as an event
+2026-04-03 13:15:33 [DEBUG] discord.client: on_message has successfully been registered as an event
+2026-04-03 13:15:33 [INFO] core.bus: Adapter registered: max
+2026-04-03 13:15:33 [INFO] core.bus: Adapter registered: telegram
+2026-04-03 13:15:33 [INFO] core.bus: Adapter registered: discord
+2026-04-03 13:15:33 [INFO] core.bus: MessageBus worker started
+2026-04-03 13:15:33 [INFO] pymax.core: Client starting
+2026-04-03 13:15:33 [INFO] pymax.core: Connecting to WebSocket wss://ws-api.oneme.ru/websocket
+2026-04-03 13:15:33 [INFO] adapters.telegram.adapter: Telegram adapter started
+2026-04-03 13:15:33 [INFO] adapters.discord.adapter: Discord adapter starting
+2026-04-03 13:15:33 [INFO] aiogram.dispatcher: Start polling
+2026-04-03 13:15:33 [INFO] discord.client: logging in using static token
+2026-04-03 13:15:33 [DEBUG] websockets.client: = connection is CONNECTING
+2026-04-03 13:15:43 [ERROR] pymax.core: Client start iteration failed
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 544, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 470, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 1198, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 1231, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 542, in __await_impl__
+    async with asyncio_timeout(self.open_timeout):
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/timeouts.py", line 114, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/core.py", line 295, in start
+    await self.connect(self.user_agent)
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/websocket.py", line 48, in connect
+    self._ws = await websockets.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 581, in __await_impl__
+    raise TimeoutError("timed out during opening handshake") from exc
+TimeoutError: timed out during opening handshake
+2026-04-03 13:15:43 [INFO] pymax.core: Client start() cleaned up
+2026-04-03 13:15:43 [INFO] pymax.core: Reconnect enabled — restarting client
+2026-04-03 13:15:44 [INFO] pymax.core: Connecting to WebSocket wss://ws-api.oneme.ru/websocket
+2026-04-03 13:15:44 [DEBUG] websockets.client: = connection is CONNECTING
+2026-04-03 13:15:54 [ERROR] pymax.core: Client start iteration failed
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 544, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 470, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 1198, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 1231, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 542, in __await_impl__
+    async with asyncio_timeout(self.open_timeout):
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/timeouts.py", line 114, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/core.py", line 295, in start
+    await self.connect(self.user_agent)
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/websocket.py", line 48, in connect
+    self._ws = await websockets.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 581, in __await_impl__
+    raise TimeoutError("timed out during opening handshake") from exc
+TimeoutError: timed out during opening handshake
+2026-04-03 13:15:54 [INFO] pymax.core: Client start() cleaned up
+2026-04-03 13:15:54 [INFO] pymax.core: Reconnect enabled — restarting client
+2026-04-03 13:15:55 [INFO] pymax.core: Connecting to WebSocket wss://ws-api.oneme.ru/websocket
+2026-04-03 13:15:55 [DEBUG] websockets.client: = connection is CONNECTING
+2026-04-03 13:16:05 [ERROR] pymax.core: Client start iteration failed
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 544, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 470, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 1198, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 1231, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 542, in __await_impl__
+    async with asyncio_timeout(self.open_timeout):
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/timeouts.py", line 114, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/core.py", line 295, in start
+    await self.connect(self.user_agent)
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/websocket.py", line 48, in connect
+    self._ws = await websockets.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 581, in __await_impl__
+    raise TimeoutError("timed out during opening handshake") from exc
+TimeoutError: timed out during opening handshake
+2026-04-03 13:16:05 [INFO] pymax.core: Client start() cleaned up
+2026-04-03 13:16:05 [INFO] pymax.core: Reconnect enabled — restarting client
+2026-04-03 13:16:06 [INFO] pymax.core: Connecting to WebSocket wss://ws-api.oneme.ru/websocket
+2026-04-03 13:16:06 [DEBUG] websockets.client: = connection is CONNECTING
+2026-04-03 13:16:16 [ERROR] pymax.core: Client start iteration failed
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 544, in __await_impl__
+    self.connection = await self.create_connection()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 470, in create_connection
+    _, connection = await loop.create_connection(factory, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 1198, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 1231, in _create_connection_transport
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 542, in __await_impl__
+    async with asyncio_timeout(self.open_timeout):
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/timeouts.py", line 114, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/core.py", line 295, in start
+    await self.connect(self.user_agent)
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/pymax/mixins/websocket.py", line 48, in connect
+    self._ws = await websockets.connect(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+    )
+    ^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/websockets/asyncio/client.py", line 581, in __await_impl__
+    raise TimeoutError("timed out during opening handshake") from exc
+TimeoutError: timed out during opening handshake
+2026-04-03 13:16:16 [INFO] pymax.core: Client start() cleaned up
+2026-04-03 13:16:16 [INFO] pymax.core: Reconnect enabled — restarting client
+2026-04-03 13:16:17 [INFO] pymax.core: Connecting to WebSocket wss://ws-api.oneme.ru/websocket
+2026-04-03 13:16:17 [DEBUG] websockets.client: = connection is CONNECTING
+2026-04-03 13:16:17 [DEBUG] websockets.client: > GET /websocket HTTP/1.1
+2026-04-03 13:16:17 [DEBUG] websockets.client: > Host: ws-api.oneme.ru
+2026-04-03 13:16:17 [DEBUG] websockets.client: > Origin: https://web.max.ru
+2026-04-03 13:16:17 [DEBUG] websockets.client: > Upgrade: websocket
+2026-04-03 13:16:17 [DEBUG] websockets.client: > Connection: Upgrade
+2026-04-03 13:16:17 [DEBUG] websockets.client: > Sec-WebSocket-Key: Si4a6wn5z8r0jFvHLyf+HQ==
+2026-04-03 13:16:17 [DEBUG] websockets.client: > Sec-WebSocket-Version: 13
+2026-04-03 13:16:17 [DEBUG] websockets.client: > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2026-04-03 13:16:17 [DEBUG] websockets.client: > User-Agent: Mozilla/5.0 (Android 9; Mobile; rv:147.0.1) Gecko/147.0.1 Firefox/147.0.1
+2026-04-03 13:16:17 [DEBUG] websockets.client: < HTTP/1.1 101 Switching Protocols
+2026-04-03 13:16:17 [DEBUG] websockets.client: < upgrade: websocket
+2026-04-03 13:16:17 [DEBUG] websockets.client: < connection: upgrade
+2026-04-03 13:16:17 [DEBUG] websockets.client: < sec-websocket-accept: sOPF/oJMaWiQV62Zi61uW1p7Cc4=
+2026-04-03 13:16:17 [DEBUG] websockets.client: < sec-websocket-extensions: permessage-deflate
+2026-04-03 13:16:17 [DEBUG] websockets.client: = connection is OPEN
+2026-04-03 13:16:17 [INFO] pymax.core: WebSocket connected, starting handshake
+2026-04-03 13:16:17 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 1, "opcode": 6, "p..."buildNumber": 38859}}}' [452 bytes]
+2026-04-03 13:16:17 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":1,"opcode":6,"payload":..."GE"],"location":"RU"}}' [153 bytes]
+2026-04-03 13:16:17 [INFO] pymax.core: Handshake completed
+2026-04-03 13:16:17 [INFO] pymax.core: Starting initial sync
+2026-04-03 13:16:17 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 2, "opcode": 19, "..."buildNumber": 38859}}}' [1235 bytes]
+2026-04-03 13:16:17 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":2,"opcode":19,"payload"...aAtZilqJ7Ulzp_1sgws8"}}' [10567 bytes]
+2026-04-03 13:16:17 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":0,"seq":1,"opcode":292,"payload...6,"showTime":86400000}}' [111 bytes]
+2026-04-03 13:16:17 [INFO] pymax.core: Sync completed: dialogs=3 chats=2 channels=0
+2026-04-03 13:16:17 [INFO] adapters.max.adapter: Max adapter started, 5 chats registered
+2026-04-03 13:16:17 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 3, "opcode": 1, "p... {"interactive": true}}' [78 bytes]
+2026-04-03 13:16:17 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 4, "opcode": 5, "p...id": 1775211333007}}]}}' [262 bytes]
+2026-04-03 13:16:17 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":3,"opcode":1,"payload":null}' [52 bytes]
+2026-04-03 13:16:17 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":4,"opcode":5,"payload":null}' [52 bytes]
+2026-04-03 13:16:17 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 5, "opcode": 5, "p...id": 1775211333007}}]}}' [257 bytes]
+2026-04-03 13:16:17 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":5,"opcode":5,"payload":null}' [52 bytes]
+2026-04-03 13:16:33 [INFO] aiogram.dispatcher: Polling stopped
+2026-04-03 13:16:33 [ERROR] asyncio: Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<Dispatcher.start_polling() done, defined at /Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiogram/dispatcher/dispatcher.py:520> exception=TelegramNetworkError('HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]')>
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1325, in _wrap_create_connection
+    return await self._loop.create_connection(*args, **kwargs, sock=sock)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 1198, in create_connection
+    transport, protocol = await self._create_connection_transport(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        ssl_shutdown_timeout=ssl_shutdown_timeout)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/asyncio/base_events.py", line 1231, in _create_connection_transport
+    await waiter
+ConnectionAbortedError: SSL handshake is taking longer than 60.0 seconds: aborting the connection
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiogram/client/session/aiohttp.py", line 167, in make_request
+    async with session.post(
+               ~~~~~~~~~~~~^
+        url,
+        ^^^^
+        data=form,
+        ^^^^^^^^^^
+        timeout=self.timeout if timeout is None else timeout,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as resp:
+    ^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiohttp/client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiohttp/client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiohttp/client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiohttp/connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1623, in _create_direct_connection
+    raise last_exc
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1592, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1333, in _wrap_create_connection
+    raise client_error(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiogram/dispatcher/dispatcher.py", line 621, in start_polling
+    await asyncio.gather(*done)
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiogram/dispatcher/dispatcher.py", line 377, in _polling
+    user: User = await bot.me()
+                 ^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiogram/client/bot.py", line 362, in me
+    self._me = await self.get_me()
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiogram/client/bot.py", line 1798, in get_me
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiogram/client/session/base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/minotaur/Project/TIHA-Bridge/.venv/lib/python3.14/site-packages/aiogram/client/session/aiohttp.py", line 176, in make_request
+    raise TelegramNetworkError(method=method, message=f"{type(e).__name__}: {e}") from e
+aiogram.exceptions.TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]
+2026-04-03 13:16:33 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 6, "opcode": 5, "p...id": 1775211333007}}]}}' [257 bytes]
+2026-04-03 13:16:33 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":6,"opcode":5,"payload":null}' [52 bytes]
+2026-04-03 13:16:37 [DEBUG] websockets.client: > PING 2a db 88 b7 [binary, 4 bytes]
+2026-04-03 13:16:37 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:16:37 [DEBUG] websockets.client: < PONG 2a db 88 b7 [binary, 4 bytes]
+2026-04-03 13:16:37 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:16:47 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 7, "opcode": 1, "p... {"interactive": true}}' [78 bytes]
+2026-04-03 13:16:47 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":7,"opcode":1,"payload":null}' [52 bytes]
+2026-04-03 13:16:57 [DEBUG] websockets.client: > PING 6d 9b 68 d2 [binary, 4 bytes]
+2026-04-03 13:16:57 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:16:57 [DEBUG] websockets.client: < PONG 6d 9b 68 d2 [binary, 4 bytes]
+2026-04-03 13:16:57 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:17:10 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 8, "opcode": 5, "p...id": 1775211333007}}]}}' [257 bytes]
+2026-04-03 13:17:10 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":8,"opcode":5,"payload":null}' [52 bytes]
+2026-04-03 13:17:17 [DEBUG] websockets.client: > PING 9b 55 af 77 [binary, 4 bytes]
+2026-04-03 13:17:17 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:17:17 [DEBUG] websockets.client: < PONG 9b 55 af 77 [binary, 4 bytes]
+2026-04-03 13:17:17 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:17:17 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 9, "opcode": 1, "p... {"interactive": true}}' [78 bytes]
+2026-04-03 13:17:17 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":9,"opcode":1,"payload":null}' [52 bytes]
+2026-04-03 13:17:27 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 10, "opcode": 5, "...id": 1775211333007}}]}}' [258 bytes]
+2026-04-03 13:17:27 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":10,"opcode":5,"payload":null}' [53 bytes]
+2026-04-03 13:17:37 [DEBUG] websockets.client: > PING aa f4 dc 64 [binary, 4 bytes]
+2026-04-03 13:17:37 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:17:37 [DEBUG] websockets.client: < PONG aa f4 dc 64 [binary, 4 bytes]
+2026-04-03 13:17:37 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:17:41 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 11, "opcode": 5, "...id": 1775211333007}}]}}' [258 bytes]
+2026-04-03 13:17:41 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":11,"opcode":5,"payload":null}' [53 bytes]
+2026-04-03 13:17:47 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 12, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-03 13:17:47 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":12,"opcode":1,"payload":null}' [53 bytes]
+2026-04-03 13:17:57 [DEBUG] websockets.client: > PING f1 53 06 ce [binary, 4 bytes]
+2026-04-03 13:17:57 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:17:57 [DEBUG] websockets.client: < PONG f1 53 06 ce [binary, 4 bytes]
+2026-04-03 13:17:57 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:18:06 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 13, "opcode": 5, "...id": 1775211333007}}]}}' [258 bytes]
+2026-04-03 13:18:06 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":13,"opcode":5,"payload":null}' [53 bytes]
+2026-04-03 13:18:17 [DEBUG] websockets.client: > PING 47 54 af 56 [binary, 4 bytes]
+2026-04-03 13:18:17 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:18:17 [DEBUG] websockets.client: < PONG 47 54 af 56 [binary, 4 bytes]
+2026-04-03 13:18:17 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:18:17 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 14, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-03 13:18:17 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":14,"opcode":1,"payload":null}' [53 bytes]
+2026-04-03 13:18:23 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 15, "opcode": 5, "...id": 1775211333007}}]}}' [258 bytes]
+2026-04-03 13:18:23 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":15,"opcode":5,"payload":null}' [53 bytes]
+2026-04-03 13:18:37 [DEBUG] websockets.client: > PING a7 18 d2 c8 [binary, 4 bytes]
+2026-04-03 13:18:37 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:18:37 [DEBUG] websockets.client: < PONG a7 18 d2 c8 [binary, 4 bytes]
+2026-04-03 13:18:37 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:18:40 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 16, "opcode": 5, "...id": 1775211333007}}]}}' [259 bytes]
+2026-04-03 13:18:40 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":16,"opcode":5,"payload":null}' [53 bytes]
+2026-04-03 13:18:47 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 17, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-03 13:18:47 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":17,"opcode":1,"payload":null}' [53 bytes]
+2026-04-03 13:18:57 [DEBUG] websockets.client: > PING 3b 96 25 aa [binary, 4 bytes]
+2026-04-03 13:18:57 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:18:57 [DEBUG] websockets.client: < PONG 3b 96 25 aa [binary, 4 bytes]
+2026-04-03 13:18:57 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:19:17 [DEBUG] websockets.client: > PING cc 14 c6 3e [binary, 4 bytes]
+2026-04-03 13:19:17 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:19:17 [DEBUG] websockets.client: < PONG cc 14 c6 3e [binary, 4 bytes]
+2026-04-03 13:19:17 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:19:17 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 18, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-03 13:19:17 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":18,"opcode":1,"payload":null}' [53 bytes]
+2026-04-03 13:19:37 [DEBUG] websockets.client: > PING 03 64 fb 82 [binary, 4 bytes]
+2026-04-03 13:19:37 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:19:37 [DEBUG] websockets.client: < PONG 03 64 fb 82 [binary, 4 bytes]
+2026-04-03 13:19:37 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:19:47 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 19, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-03 13:19:47 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":19,"opcode":1,"payload":null}' [53 bytes]
+2026-04-03 13:19:57 [DEBUG] websockets.client: > PING c0 e0 60 7c [binary, 4 bytes]
+2026-04-03 13:19:57 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:19:57 [DEBUG] websockets.client: < PONG c0 e0 60 7c [binary, 4 bytes]
+2026-04-03 13:19:57 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:20:17 [DEBUG] websockets.client: > PING 70 a9 1d ff [binary, 4 bytes]
+2026-04-03 13:20:17 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:20:17 [DEBUG] websockets.client: < PONG 70 a9 1d ff [binary, 4 bytes]
+2026-04-03 13:20:17 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:20:17 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 20, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-03 13:20:17 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":20,"opcode":1,"payload":null}' [53 bytes]
+2026-04-03 13:20:37 [DEBUG] websockets.client: > PING 33 23 43 f3 [binary, 4 bytes]
+2026-04-03 13:20:37 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:20:37 [DEBUG] websockets.client: < PONG 33 23 43 f3 [binary, 4 bytes]
+2026-04-03 13:20:37 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:20:47 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 21, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-03 13:20:47 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":21,"opcode":1,"payload":null}' [53 bytes]
+2026-04-03 13:20:57 [DEBUG] websockets.client: > PING 2e a1 96 9e [binary, 4 bytes]
+2026-04-03 13:20:57 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:20:57 [DEBUG] websockets.client: < PONG 2e a1 96 9e [binary, 4 bytes]
+2026-04-03 13:20:57 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:21:17 [DEBUG] websockets.client: > PING 53 bd 92 27 [binary, 4 bytes]
+2026-04-03 13:21:17 [DEBUG] websockets.client: % sent keepalive ping
+2026-04-03 13:21:17 [DEBUG] websockets.client: < PONG 53 bd 92 27 [binary, 4 bytes]
+2026-04-03 13:21:17 [DEBUG] websockets.client: % received keepalive pong
+2026-04-03 13:21:17 [DEBUG] websockets.client: > TEXT '{"ver": 11, "cmd": 0, "seq": 22, "opcode": 1, "... {"interactive": true}}' [79 bytes]
+2026-04-03 13:21:17 [DEBUG] websockets.client: < TEXT '{"ver":11,"cmd":1,"seq":22,"opcode":1,"payload":null}' [53 bytes]

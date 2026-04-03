@@ -11,6 +11,8 @@ from adapters.telegram.adapter import TelegramAdapter
 from adapters.discord.adapter import DiscordAdapter
 from db.database import init as db_init
 import config
+from core.adapter_config import is_enabled
+logger = logging.getLogger(__name__)
 
 
 def setup_logging() -> None:
@@ -59,14 +61,26 @@ async def main() -> None:
     bus.register_adapter(tg_adapter)
     bus.register_adapter(dc_adapter)
 
-    await max_adapter.start()
+    # start только если включён
+    tasks = [bus.run()]
 
-    await asyncio.gather(
-        max_client.start(),
-        tg_adapter.start(),
-        dc_adapter.start(),
-        bus.run(),
-    )
+    if is_enabled("max"):
+        await max_adapter.start()
+        tasks.append(max_client.start())
+    else:
+        logger.info("Max adapter disabled — skipping start")
+
+    if is_enabled("telegram"):
+        tasks.append(tg_adapter.start())
+    else:
+        logger.info("Telegram adapter disabled — skipping start")
+
+    if is_enabled("discord"):
+        tasks.append(dc_adapter.start())
+    else:
+        logger.info("Discord adapter disabled — skipping start")
+
+    await asyncio.gather(*tasks)
 
 
 if __name__ == "__main__":

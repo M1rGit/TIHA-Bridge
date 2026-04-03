@@ -4,7 +4,6 @@ import io
 import logging
 from datetime import datetime
 
-import discord
 from aiogram import Bot, Dispatcher, F
 from aiogram.filters import Command, ChatMemberUpdatedFilter, JOIN_TRANSITION
 from aiogram.types import (
@@ -28,6 +27,9 @@ class TelegramAdapter(BaseAdapter):
         self._dp       = Dispatcher()
         self._owner_id = owner_id
         self._bus      = bus
+
+    def _is_admin(self, user_id: int) -> bool:
+        return user_id == self._owner_id or db.is_admin("telegram", str(user_id))
 
     async def start(self) -> None:
         self._register_handlers()
@@ -53,18 +55,23 @@ class TelegramAdapter(BaseAdapter):
             except Exception:
                 pass
 
-        @dp.message(Command("start"), F.from_user.id == self._owner_id)
+        @dp.message(Command("start"))
         async def cmd_start(message: Message) -> None:
+            if not self._is_admin(message.from_user.id):
+                return
             await message.answer(
                 "Мост Max ↔ TG ↔ Discord\n\n"
                 "/routes — все маршруты\n"
                 "/addroute — добавить маршрут\n"
                 "/delroute — удалить маршрут\n"
                 "/setchat — целевой чат для ЛС\n"
+                "/admins — список админов\n"
             )
 
-        @dp.message(Command("routes"), F.from_user.id == self._owner_id)
+        @dp.message(Command("routes"))
         async def cmd_routes(message: Message) -> None:
+            if not self._is_admin(message.from_user.id):
+                return
             rows = db.get_all_routes()
             if not rows:
                 await message.answer("Маршрутов нет.")
@@ -78,16 +85,21 @@ class TelegramAdapter(BaseAdapter):
             ]
             await message.answer("Маршруты:\n\n" + "\n".join(lines))
 
-        @dp.message(Command("addroute"), F.from_user.id == self._owner_id)
+        @dp.message(Command("addroute"))
         async def cmd_addroute(message: Message) -> None:
+            if not self._is_admin(message.from_user.id):
+                return
             kb = InlineKeyboardMarkup(inline_keyboard=[
                 [InlineKeyboardButton(text=p, callback_data=f"ar_src_plat:{p}")]
                 for p in ("max", "telegram", "discord")
             ])
             await message.answer("Платформа-источник:", reply_markup=kb)
 
-        @dp.callback_query(F.data.startswith("ar_src_plat:"), F.from_user.id == self._owner_id)
+        @dp.callback_query(F.data.startswith("ar_src_plat:"))
         async def cb_src_plat(callback: CallbackQuery) -> None:
+            if not self._is_admin(callback.from_user.id):
+                await callback.answer()
+                return
             platform = callback.data.split(":")[1]
             chats    = db.get_chats(platform)
             if not chats:
@@ -103,8 +115,11 @@ class TelegramAdapter(BaseAdapter):
             await callback.message.edit_text(f"Чат-источник ({platform}):", reply_markup=kb)
             await callback.answer()
 
-        @dp.callback_query(F.data.startswith("ar_src_chat:"), F.from_user.id == self._owner_id)
+        @dp.callback_query(F.data.startswith("ar_src_chat:"))
         async def cb_src_chat(callback: CallbackQuery) -> None:
+            if not self._is_admin(callback.from_user.id):
+                await callback.answer()
+                return
             _, platform, chat_id = callback.data.split(":", 2)
             kb = InlineKeyboardMarkup(inline_keyboard=[
                 [InlineKeyboardButton(
@@ -117,8 +132,11 @@ class TelegramAdapter(BaseAdapter):
             await callback.message.edit_text("Платформа-получатель:", reply_markup=kb)
             await callback.answer()
 
-        @dp.callback_query(F.data.startswith("ar_snk_plat:"), F.from_user.id == self._owner_id)
+        @dp.callback_query(F.data.startswith("ar_snk_plat:"))
         async def cb_snk_plat(callback: CallbackQuery) -> None:
+            if not self._is_admin(callback.from_user.id):
+                await callback.answer()
+                return
             _, src_plat, src_chat, snk_plat = callback.data.split(":", 3)
             chats = db.get_chats(snk_plat)
             if not chats:
@@ -134,8 +152,11 @@ class TelegramAdapter(BaseAdapter):
             await callback.message.edit_text(f"Чат-получатель ({snk_plat}):", reply_markup=kb)
             await callback.answer()
 
-        @dp.callback_query(F.data.startswith("ar_snk_chat:"), F.from_user.id == self._owner_id)
+        @dp.callback_query(F.data.startswith("ar_snk_chat:"))
         async def cb_snk_chat(callback: CallbackQuery) -> None:
+            if not self._is_admin(callback.from_user.id):
+                await callback.answer()
+                return
             _, src_plat, src_chat, snk_plat, snk_chat = callback.data.split(":", 4)
             db.add_route(src_plat, src_chat, snk_plat, snk_chat)
             await callback.message.edit_text(
@@ -144,8 +165,10 @@ class TelegramAdapter(BaseAdapter):
             )
             await callback.answer()
 
-        @dp.message(Command("delroute"), F.from_user.id == self._owner_id)
+        @dp.message(Command("delroute"))
         async def cmd_delroute(message: Message) -> None:
+            if not self._is_admin(message.from_user.id):
+                return
             rows = db.get_all_routes()
             if not rows:
                 await message.answer("Маршрутов нет.")
@@ -160,23 +183,31 @@ class TelegramAdapter(BaseAdapter):
             ])
             await message.answer("Выберите маршрут для удаления:", reply_markup=kb)
 
-        @dp.callback_query(F.data.startswith("delroute:"), F.from_user.id == self._owner_id)
+        @dp.callback_query(F.data.startswith("delroute:"))
         async def cb_delroute(callback: CallbackQuery) -> None:
+            if not self._is_admin(callback.from_user.id):
+                await callback.answer()
+                return
             route_id = int(callback.data.split(":")[1])
             db.remove_route(route_id)
             await callback.message.edit_text("✅ Маршрут удалён.")
             await callback.answer()
 
-        @dp.message(Command("setchat"), F.from_user.id == self._owner_id)
+        @dp.message(Command("setchat"))
         async def cmd_setchat(message: Message) -> None:
+            if not self._is_admin(message.from_user.id):
+                return
             kb = InlineKeyboardMarkup(inline_keyboard=[
                 [InlineKeyboardButton(text=p, callback_data=f"sc_plat:{p}")]
                 for p in ("max", "telegram", "discord")
             ])
             await message.answer("Платформа для ЛС:", reply_markup=kb)
 
-        @dp.callback_query(F.data.startswith("sc_plat:"), F.from_user.id == self._owner_id)
+        @dp.callback_query(F.data.startswith("sc_plat:"))
         async def cb_sc_plat(callback: CallbackQuery) -> None:
+            if not self._is_admin(callback.from_user.id):
+                await callback.answer()
+                return
             platform = callback.data.split(":")[1]
             chats    = db.get_chats(platform)
             if not chats:
@@ -192,13 +223,27 @@ class TelegramAdapter(BaseAdapter):
             await callback.message.edit_text("Выберите чат:", reply_markup=kb)
             await callback.answer()
 
-        @dp.callback_query(F.data.startswith("sc_chat:"), F.from_user.id == self._owner_id)
+        @dp.callback_query(F.data.startswith("sc_chat:"))
         async def cb_sc_chat(callback: CallbackQuery) -> None:
+            if not self._is_admin(callback.from_user.id):
+                await callback.answer()
+                return
             _, platform, chat_id = callback.data.split(":", 2)
             db.set_setting("ls_target_platform", platform)
             db.set_setting("ls_target_chat_id", chat_id)
             await callback.message.edit_text(f"✅ ЛС → {platform}/{chat_id}")
             await callback.answer()
+
+        @dp.message(Command("admins"))
+        async def cmd_admins(message: Message) -> None:
+            if not self._is_admin(message.from_user.id):
+                return
+            admins = db.get_admins("telegram")
+            if not admins:
+                await message.answer("Дополнительных админов нет.\n(owner всегда имеет доступ)")
+                return
+            lines = "\n".join(f"• {uid}" for uid in admins)
+            await message.answer(f"Админы Telegram:\n{lines}")
 
         @dp.message(
             F.chat.type == "private",
@@ -225,8 +270,7 @@ class TelegramAdapter(BaseAdapter):
 
         if message.photo:
             photo_bytes = await self._download_tg_file(message.photo[-1].file_id)
-        # TG не даёт постоянных публичных URL — сохраняем file_id
-            media_url = f"tg://file/{message.photo[-1].file_id}"
+            media_url   = f"tg://file/{message.photo[-1].file_id}"
         elif message.voice:
             raw = await self._download_tg_file(message.voice.file_id)
             if raw:

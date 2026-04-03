@@ -7,6 +7,7 @@ from core.router import Router
 from core.adapter import BaseAdapter
 from db.queue import PersistentQueue
 from db import database as db
+from core.adapter_config import is_enabled
 
 logger = logging.getLogger(__name__)
 
@@ -22,6 +23,13 @@ class MessageBus:
         logger.info("Adapter registered: %s", adapter.platform)
 
     async def publish(self, msg: UniversalMessage) -> None:
+        if not is_enabled(msg.source_platform):          # <-- новое
+            logger.debug(
+                "Adapter '%s' disabled — dropping incoming message from %s",
+                msg.source_platform, msg.source_chat_id,
+            )
+            return
+
         targets = self._router.get_targets(msg)
         if not targets:
             logger.debug(
@@ -30,6 +38,12 @@ class MessageBus:
             )
             return
         for sink_platform, sink_chat_id in targets:
+            if not is_enabled(sink_platform):            # <-- новое
+                logger.debug(
+                    "Adapter '%s' disabled — skipping sink for message %s",
+                    sink_platform, msg.id,
+                )
+                continue
             self._queue.push(msg, sink_platform, sink_chat_id)
             logger.debug("Queued %s → %s/%s", msg.id, sink_platform, sink_chat_id)
 
