@@ -10,6 +10,7 @@ from adapters.max.adapter import MaxAdapter
 from adapters.telegram.adapter import TelegramAdapter
 from adapters.discord.adapter import DiscordAdapter
 from db.database import init as db_init
+from db.messages import init as msg_init
 import config
 from core.adapter_config import is_enabled
 logger = logging.getLogger(__name__)
@@ -49,6 +50,7 @@ def setup_logging() -> None:
 async def main() -> None:
     setup_logging()
     db_init()
+    msg_init()
 
     bus = MessageBus()
 

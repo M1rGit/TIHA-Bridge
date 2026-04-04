@@ -3,5 +3,9 @@ __pycache__
 .env
 cache
 bridge.db
+messages.db
 codes.txt
 todo
+logs
+.DS_Store
+bridge.log

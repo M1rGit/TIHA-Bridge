@@ -5,7 +5,7 @@ from datetime import datetime
 from core.message import UniversalMessage
 from core.router import Router
 from core.adapter import BaseAdapter
-from db.queue import PersistentQueue
+from db.messages import PersistentQueue, log_message
 from db import database as db
 from core.adapter_config import is_enabled
 
@@ -23,7 +23,7 @@ class MessageBus:
         logger.info("Adapter registered: %s", adapter.platform)
 
     async def publish(self, msg: UniversalMessage) -> None:
-        if not is_enabled(msg.source_platform):          # <-- новое
+        if not is_enabled(msg.source_platform):
             logger.debug(
                 "Adapter '%s' disabled — dropping incoming message from %s",
                 msg.source_platform, msg.source_chat_id,
@@ -73,7 +73,7 @@ class MessageBus:
             now     = datetime.utcnow().isoformat()
             status  = "delivered" if success else "failed"
 
-            db.log_message(
+            log_message(
                 msg_id=            msg.id,
                 source_platform=   msg.source_platform,
                 source_chat_id=    msg.source_chat_id,

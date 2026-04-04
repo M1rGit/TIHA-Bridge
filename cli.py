@@ -1,6 +1,7 @@
 import sys
 from core.adapter_config import is_enabled, set_enabled, all_states
 from db.database import init as db_init
+from db.messages import init as msg_init
 from db import database as db
 
 PLATFORMS = ("max", "telegram", "discord")
@@ -152,7 +153,8 @@ def _check_platform(platform: str) -> None:
 # ── Entry point ──────────────────────────────────────────────────────────────
 
 def main() -> None:
-    db_init()  # создаёт таблицы если БД новая
+    db_init()
+    msg_init()
 
     args = sys.argv[1:]
     if not args:

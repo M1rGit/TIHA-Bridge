@@ -1,4 +1,4 @@
 adapters:
   max: true
   telegram: true
-  discord: true
+  discord: false

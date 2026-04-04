@@ -29,41 +29,6 @@ def init() -> None:
                 UNIQUE (source_platform, source_chat_id, sink_platform, sink_chat_id)
             );
 
-            CREATE TABLE IF NOT EXISTS message_queue (
-                id                TEXT PRIMARY KEY,
-                source_platform   TEXT NOT NULL,
-                source_chat_id    TEXT NOT NULL,
-                source_user_id    TEXT NOT NULL,
-                sink_platform     TEXT NOT NULL,
-                sink_chat_id      TEXT NOT NULL,
-                text              TEXT NOT NULL,
-                photo_bytes       BLOB,
-                media_url         TEXT,
-                source_user_name  TEXT,
-                source_chat_title TEXT,
-                timestamp         TEXT NOT NULL,
-                status            TEXT NOT NULL DEFAULT 'pending',
-                retry_count       INTEGER NOT NULL DEFAULT 0,
-                next_retry_at     TEXT
-            );
-
-            CREATE TABLE IF NOT EXISTS message_log (
-                id              TEXT PRIMARY KEY,
-                source_platform TEXT NOT NULL,
-                source_chat_id  TEXT NOT NULL,
-                source_chat_title TEXT,
-                source_user_id  TEXT NOT NULL,
-                source_user_name TEXT,
-                sink_platform   TEXT NOT NULL,
-                sink_chat_id    TEXT NOT NULL,
-                text            TEXT NOT NULL,
-                media_url       TEXT,
-                status          TEXT NOT NULL,
-                retry_count     INTEGER NOT NULL,
-                timestamp       TEXT NOT NULL,
-                delivered_at    TEXT
-            );
-
             CREATE TABLE IF NOT EXISTS settings (
                 key   TEXT PRIMARY KEY,
                 value TEXT NOT NULL
@@ -173,39 +138,6 @@ def get_user_name(platform: str, user_id: str) -> str | None:
             (platform, user_id),
         ).fetchone()
         return row["name"] if row else None
-
-
-# --- Message log ---
-
-def log_message(
-    msg_id: str,
-    source_platform: str,
-    source_chat_id: str,
-    source_chat_title: str | None,
-    source_user_id: str,
-    source_user_name: str | None,
-    sink_platform: str,
-    sink_chat_id: str,
-    text: str,
-    media_url: str | None,
-    status: str,
-    retry_count: int,
-    timestamp: str,
-    delivered_at: str | None = None,
-) -> None:
-    with _conn() as con:
-        con.execute(
-            """INSERT OR REPLACE INTO message_log
-               (id, source_platform, source_chat_id, source_chat_title,
-                source_user_id, source_user_name, sink_platform, sink_chat_id,
-                text, media_url, status, retry_count, timestamp, delivered_at)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-            (
-                msg_id, source_platform, source_chat_id, source_chat_title,
-                source_user_id, source_user_name, sink_platform, sink_chat_id,
-                text, media_url, status, retry_count, timestamp, delivered_at,
-            ),
-        )
 
 
 # --- Settings ---

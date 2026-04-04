@@ -15,6 +15,7 @@ from core.adapter import BaseAdapter
 from core.media import to_mp3, to_mp4
 from core.message import UniversalMessage
 from db import database as db
+from db.messages import log_outgoing_message
 
 logger = logging.getLogger(__name__)
 
@@ -259,7 +260,30 @@ class TelegramAdapter(BaseAdapter):
             universal = await self._build_universal(message)
             adapter   = self._bus._adapters.get(platform)
             if adapter:
-                asyncio.create_task(adapter.send(universal, chat_id))
+                asyncio.create_task(self._send_and_log_ls(universal, platform, chat_id))
+
+    async def _send_and_log_ls(self, universal: UniversalMessage, platform: str, chat_id: str) -> None:
+        """Отправляет ЛС сообщение и логирует его как исходящее."""
+        adapter = self._bus._adapters.get(platform)
+        if not adapter:
+            return
+        success = await adapter.send(universal, chat_id)
+        log_outgoing_message(
+            source_platform=   "telegram",
+            source_chat_id=    universal.source_chat_id,
+            source_user_id=    universal.source_user_id,
+            source_user_name=  universal.source_user_name,
+            source_chat_title= universal.source_chat_title,
+            sink_platform=     platform,
+            sink_chat_id=      chat_id,
+            text=              universal.text,
+            media_url=         universal.media_url,
+        )
+        status = "delivered" if success else "failed"
+        logger.info(
+            "LS message %s → %s/%s [%s]",
+            universal.id, platform, chat_id, status,
+        )
 
     async def _build_universal(self, message: Message) -> UniversalMessage:
         from core.identity import resolve_chat_title
