@@ -1,0 +1,6 @@
+pymax
+aiogram>=3.0.0
+python-dotenv
+discord.py>=2.0.0
+pyyaml
+httpx
