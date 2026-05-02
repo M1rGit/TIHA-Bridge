@@ -5,11 +5,13 @@ import logging
 from datetime import datetime
 
 from aiogram import Bot, Dispatcher, F
+from aiogram.client.session.aiohttp import AiohttpSession
 from aiogram.filters import Command, ChatMemberUpdatedFilter, JOIN_TRANSITION
 from aiogram.types import (
     BufferedInputFile, CallbackQuery, ChatMemberUpdated,
     InlineKeyboardButton, InlineKeyboardMarkup, Message,
 )
+from aiohttp_socks import ProxyConnector
 
 from core.adapter import BaseAdapter
 from core.media import to_mp3, to_mp4
@@ -24,7 +26,9 @@ class TelegramAdapter(BaseAdapter):
     platform = "telegram"
 
     def __init__(self, token: str, owner_id: int, bus) -> None:
-        self._bot      = Bot(token=token)
+        connector = ProxyConnector.from_url("socks5://127.0.0.1:10800")
+        session   = AiohttpSession(connector=connector)
+        self._bot      = Bot(token=token, session=session)
         self._dp       = Dispatcher()
         self._owner_id = owner_id
         self._bus      = bus

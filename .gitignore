@@ -9,3 +9,4 @@ todo
 logs
 .DS_Store
 bridge.log
+logs/bridge.log

@@ -4,3 +4,4 @@ python-dotenv
 discord.py>=2.0.0
 pyyaml
 httpx
+aiohttp-socks
